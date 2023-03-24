@@ -25,7 +25,7 @@ services:
       context: backend
     environment:
       - NODE_ENV=development
-      - PG_URL=postgres://devroot:devrootpassword@cattle-db:5432/devhack
+      - PG_URL=postgres://devroot:devrootpassword@devhack-db:5432/devhack
       - JWT_ACCESS_SECRET=access_secret_key1592034
       - JWT_REFRESH_SECRET=refresh_secret_key5643417
       - BOT_TOKEN=6093495160:AAHTdUk5Va6nQ2lWOS4o_Yp-L8D4qah34TU
