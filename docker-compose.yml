@@ -4,7 +4,7 @@ version: "3.8"
 services:
   db:
     image: 'postgres:14-bullseye'
-    container_name: cattle-db
+    container_name: devhack-db
     restart: always
     environment:
       - POSTGRES_USER=devroot
@@ -18,8 +18,8 @@ services:
       - './postgresql-data:/var/lib/postgresql/data'
 
   backend:
-    image: 'cattle-backend:dev1'
-    container_name: cattle-backend
+    image: 'devhack-backend:dev1'
+    container_name: devhack-backend
     restart: always
     build:
       context: backend
@@ -28,8 +28,8 @@ services:
       - PG_URL=postgres://devroot:devrootpassword@cattle-db:5432/devhack
       - JWT_ACCESS_SECRET=access_secret_key1592034
       - JWT_REFRESH_SECRET=refresh_secret_key5643417
-      - BOT_TOKEN=
-      - LOGS_CHAT_ID=
+      - BOT_TOKEN=6093495160:AAHTdUk5Va6nQ2lWOS4o_Yp-L8D4qah34TU
+      - LOGS_CHAT_ID=-749478623
 
       - SERVER_HOST=127.0.0.1
       - SERVER_PORT=5000
@@ -43,8 +43,8 @@ services:
       - shared-network
 
 #  frontend:
-#    image: 'cattle-frontend:dev1'
-#    container_name: cattle-frontend
+#    image: 'devhack-frontend:dev1'
+#    container_name: devhack-frontend
 #    restart: always
 #    build:
 #      context: frontend
@@ -57,7 +57,7 @@ services:
 
   nginx:
     image: nginx:latest
-    container_name: cattle-nginx
+    container_name: devhack-nginx
     restart: always
     depends_on:
       - backend
@@ -73,7 +73,7 @@ services:
 
   certbot:
     image: certbot/certbot:latest
-    container_name: cattle-certbot
+    container_name: devhack-certbot
     volumes:
       - ./certbot/www:/var/www/certbot/:rw
       - ./certbot/conf/:/etc/letsencrypt/:rw
