@@ -54,29 +54,29 @@ services:
 #      - backend
 #    networks:
 #      - shared-network
-
-  nginx:
-    image: nginx:latest
-    container_name: devhack-nginx
-    restart: always
-    depends_on:
-      - backend
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx/conf/:/etc/nginx/conf.d/:ro
-      - ./certbot/www:/var/www/certbot/:ro
-#      - ./certbot/conf/:/etc/nginx/ssl/:ro
-    networks:
-      - shared-network
-
-  certbot:
-    image: certbot/certbot:latest
-    container_name: devhack-certbot
-    volumes:
-      - ./certbot/www:/var/www/certbot/:rw
-      - ./certbot/conf/:/etc/letsencrypt/:rw
+#
+#  nginx:
+#    image: nginx:latest
+#    container_name: devhack-nginx
+#    restart: always
+#    depends_on:
+#      - backend
+#    ports:
+#      - "80:80"
+#      - "443:443"
+#    volumes:
+#      - ./nginx/conf/:/etc/nginx/conf.d/:ro
+#      - ./certbot/www:/var/www/certbot/:ro
+##      - ./certbot/conf/:/etc/nginx/ssl/:ro
+#    networks:
+#      - shared-network
+#
+#  certbot:
+#    image: certbot/certbot:latest
+#    container_name: devhack-certbot
+#    volumes:
+#      - ./certbot/www:/var/www/certbot/:rw
+#      - ./certbot/conf/:/etc/letsencrypt/:rw
 
 
 networks:
