@@ -25,16 +25,16 @@ services:
       context: backend
     environment:
       - NODE_ENV=development
-      - PG_URL=postgres://devroot:devrootpassword@cattle-db:5432/cattle-db
+      - PG_URL=postgres://devroot:devrootpassword@cattle-db:5432/devhack
       - JWT_ACCESS_SECRET=access_secret_key1592034
       - JWT_REFRESH_SECRET=refresh_secret_key5643417
-      - BOT_TOKEN=6050872592:AAEiqNbrtW-x9aXfS6rYFYPSPw1CC2Cw7LI
-      - LOGS_CHAT_ID=-880575438
+      - BOT_TOKEN=
+      - LOGS_CHAT_ID=
 
       - SERVER_HOST=127.0.0.1
       - SERVER_PORT=5000
       - CLIENT_URL_DEV=http://localhost:3000
-      - CLIENT_URL=https://cattle.13lab.tech
+      - CLIENT_URL=https://devhack.13lab.tech
     ports:
       - "5000:5000"
     depends_on:
@@ -42,18 +42,18 @@ services:
     networks:
       - shared-network
 
-  frontend:
-    image: 'cattle-frontend:dev1'
-    container_name: cattle-frontend
-    restart: always
-    build:
-      context: frontend
-    ports:
-      - "3000:3000"
-    depends_on:
-      - backend
-    networks:
-      - shared-network
+#  frontend:
+#    image: 'cattle-frontend:dev1'
+#    container_name: cattle-frontend
+#    restart: always
+#    build:
+#      context: frontend
+#    ports:
+#      - "3000:3000"
+#    depends_on:
+#      - backend
+#    networks:
+#      - shared-network
 
   nginx:
     image: nginx:latest
