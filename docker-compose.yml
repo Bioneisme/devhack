@@ -9,7 +9,7 @@ services:
     environment:
       - POSTGRES_USER=devroot
       - POSTGRES_PASSWORD=devrootpassword
-      - POSTGRES_DB=cattle-db
+      - POSTGRES_DB=devhack
       - PGDATA=/var/lib/postgresql/data
       - LANG=en_US.utf8
     networks:
