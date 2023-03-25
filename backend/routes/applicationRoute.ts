@@ -15,5 +15,7 @@ router.get("/getMyApplications", authMiddleware, applicationController.getMyAppl
 router.post("/createApplication", authMiddleware, applicationController.createApplication);
 router.patch("/updateApplication/:id", applicationController.updateApplication);
 
+router.delete("/deleteApplication/:id", applicationController.deleteApplication); // for admin
+
 
 export default router;
