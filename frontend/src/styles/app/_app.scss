@@ -43,8 +43,8 @@ header {
 
 main {
   position: relative;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 
   @extend %flex-column;
   height: 85vh;

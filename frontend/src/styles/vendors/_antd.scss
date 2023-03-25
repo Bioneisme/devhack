@@ -111,11 +111,13 @@ h6 {
 
 // list
 .ant-list-item {
-  border-block-end: none!important;
+  border-block-end: none !important;
+
   &-meta {
     &-description {
       color: $primary-light-color !important;
     }
+
     &-content {
       @extend %flex-column;
       gap: $fs-regular
@@ -130,19 +132,45 @@ h6 {
   //gap: $fs-xxsmall;
 }
 
+// space
+.ant-space {
+  @extend %flex-row;
+  justify-content: center !important;
+
+  // collapse inside space in all applications
+  .all-applications__accordion {
+    width: 100vw !important;
+  }
+}
+
+// collapse
+.ant-collapse {
+
+
+  &, &-item, &-header, &-content {
+    border: none !important;
+    border-radius: 0 !important;
+  }
+
+  &-header {
+    background: $table-header-color;
+  }
+
+  &-content {
+    padding-left: $fs-large;
+
+    background: $table-cell-color !important;
+
+    &-box > .ant-row > .ant-col {
+      font-size: $fs-small !important;
+    }
+
+  }
+}
+
+
 // custom class
 .flex-center {
   display: flex;
   @extend %flex-center;
-}
-
-// collapse
-.ant-space {
-  @extend %flex-row;
-  justify-content: center!important;
-
-  .all-services__accordion {
-
-    width: 100vw!important;
-  }
 }

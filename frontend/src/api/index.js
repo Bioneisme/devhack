@@ -1,7 +1,6 @@
 import axios from "axios";
 import { API_URL } from "../config/apiUrl.js";
 
-
 const API = axios.create({
   baseURL: API_URL,
   withCredentials: true,

@@ -1,11 +1,11 @@
 import GreetingPage from "../pages/GreetingPage.jsx";
 import AuthPage from "../pages/AuthPage.jsx";
 import HomePage from "../pages/HomePage.jsx";
-import AllApplicationsPage from "../pages/AllApplicationsPage.jsx";
+import ApplicationsPage from "../pages/ApplicationsPage.jsx";
 
 export const privateRoutes = [
   { path: "/", component: <HomePage />, id: 1 },
-  { path: "/services", component: <AllApplicationsPage />, id: 2 }
+  { path: "/services", component: <ApplicationsPage />, id: 2 }
 ];
 
 export const publicRoutes = [
