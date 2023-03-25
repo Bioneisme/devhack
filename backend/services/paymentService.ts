@@ -48,7 +48,7 @@ class PaymentService {
             throw e;
         });
 
-        return res.data;
+        return res.data.url;
     }
 }
 
