@@ -19,7 +19,7 @@ class PaymentService {
         const price = price_data.data.id;
         const res = await axios.post(`https://api.stripe.com/v1/payment_links?line_items[][price]=` +
             `${price}&line_items[][quantity]=1&after_completion[type]=redirect&after_completion[redirect][url]=https://devhack.13lab.tech&` +
-            `metadata[user_id]=${user_id}&metadata[title]=${title}&metadata[status]=${status}&metadata[category]=${category}`, {}, {
+            `metadata[][user_id]=${user_id}&metadata[][title]=${title}&metadata[][status]=${status}&metadata[][category]=${category}`, {}, {
             headers: {
                 Authorization: `Bearer ${STRIPE_SECRET_KEY}`
             }
