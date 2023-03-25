@@ -7,7 +7,7 @@ import paymentService from "../services/paymentService";
 class PaymentController {
     async callback(req: Request, res: Response, next: NextFunction) {
         try {
-            console.log(req.body);
+            console.log(req.body.data.object);
             return res.json({ok: true});
         } catch (e) {
             next(e);
