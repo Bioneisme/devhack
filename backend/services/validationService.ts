@@ -49,13 +49,11 @@ class ValidationService {
             throw ApiError.BadRequest('Time to complete is required', 'time_to_complete_is_required');
     }
 
-    createPayment(amount: number, title: string, status: string, category: string) {
+    createPayment(amount: number, title: string, category: string) {
         if (!amount)
             throw ApiError.BadRequest('Amount is required', 'amount_is_required');
         if (!title)
             throw ApiError.BadRequest('Title is required', 'title_is_required');
-        if (!status)
-            throw ApiError.BadRequest('Status is required', 'status_is_required');
         if (!category)
             throw ApiError.BadRequest('Category is required', 'category_is_required');
     }

@@ -4,7 +4,7 @@ import paymentController from "../controllers/paymentController";
 
 const router: Router = Router();
 
-router.post("/callback", paymentController.callback);
+router.get("/callback/:id", paymentController.callback);
 router.post("/createPayment", authMiddleware, paymentController.createPayment);
 
 
