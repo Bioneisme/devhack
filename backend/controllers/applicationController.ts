@@ -1,7 +1,7 @@
 import {NextFunction, Request, Response} from "express";
-import applicationService from "../services/applicationService";
 import {UserRequest} from "../types";
 import ApiError from "../exceptions/ApiError";
+import applicationService from "../services/applicationService";
 import validationService from "../services/validationService";
 
 class ApplicationController {
@@ -73,10 +73,10 @@ class ApplicationController {
             if (!user) {
                 return next(ApiError.UnauthorizedError());
             }
-            const {title, status, description, category, price, date} = req.body;
+            const {title, status, description, category, price, date, executor} = req.body;
             await validationService.createApplication(+user.id, title, status, category, price);
             const application = await applicationService.createApplication(+user.id, title, status, description,
-                category, price, date);
+                category, price, date, executor);
             return res.json({ok: true, message: 'Application successfully created', application});
         } catch (e) {
             next(e);
@@ -86,10 +86,10 @@ class ApplicationController {
     async updateApplication(req: Request, res: Response, next: NextFunction) {
         try {
             const {id} = req.params;
-            const {title, status, description, category, price, date} = req.body;
+            const {title, status, description, category, price, date, executor} = req.body;
             await validationService.updateApplication(+id);
             const application = await applicationService.updateApplication(+id, title, status, description,
-                category, price, date);
+                category, price, date, executor);
             return res.json({ok: true, message: 'Application successfully updated', application});
         } catch (e) {
             next(e);

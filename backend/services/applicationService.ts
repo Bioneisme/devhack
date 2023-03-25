@@ -1,5 +1,6 @@
 import {Application} from "../entities";
 import ApiError from "../exceptions/ApiError";
+import moment from "moment";
 
 class ApplicationService {
     async getApplications() {
@@ -23,21 +24,34 @@ class ApplicationService {
     }
 
     async createApplication(user_id: number, title: string, status: string, description?: string, category?: string,
-                            price?: number, date?: Date) {
-        const application = await Application.create({user_id, title, status, description, category, price, date});
+                            price?: number, date?: Date, executor?: string) {
+        const application = await Application.create({
+            user_id,
+            title,
+            status,
+            description,
+            category,
+            price,
+            date,
+            executor
+        });
         await application.save();
+
         return application;
     }
 
     async updateApplication(id: number, title: string, status: string, description?: string, category?: string,
-                            price?: number, date?: Date) {
+                            price?: number, date?: Date, executor?: string) {
         const application = await Application.findByPk(id);
         if (!application) {
             return ApiError.BadRequest('Application not found', 'application_not_found');
         }
 
-        await application.update({title, status, description, category, price, date});
+        const formattedDate = date != null ? moment(date).format('YYYY-MM-DD HH:mm') : null;
+
+        await application.update({title, status, description, category, price, date: formattedDate, executor});
         await application.save();
+
         return application;
     }
 }

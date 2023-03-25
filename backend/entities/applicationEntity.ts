@@ -25,4 +25,7 @@ export class Application extends Model {
 
     @Column({type: DataType.DATE, allowNull: true})
     date?: Date;
+
+    @Column({type: DataType.STRING, allowNull: true})
+    executor?: string;
 }
