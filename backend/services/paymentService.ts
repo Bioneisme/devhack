@@ -21,6 +21,7 @@ class PaymentService {
         const application = await Application.create({
             user_id,
             title,
+            price: amount,
             status: 'Не оплачено',
             category
         });

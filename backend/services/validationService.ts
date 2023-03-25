@@ -51,7 +51,7 @@ class ValidationService {
 
     createPayment(price: number, title: string, category: string) {
         if (!price)
-            throw ApiError.BadRequest('Amount is required', 'amount_is_required');
+            throw ApiError.BadRequest('Price is required', 'price_is_required');
         if (!title)
             throw ApiError.BadRequest('Title is required', 'title_is_required');
         if (!category)
