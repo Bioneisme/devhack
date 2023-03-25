@@ -1,6 +1,6 @@
 import axios from "axios";
-import QS from "querystring";
 import {STRIPE_SECRET_KEY} from "../config/settings";
+import QS from "querystring";
 
 class PaymentService {
     async createPayment(user_id: number, amount: number, title: string, status: string, category: string) {
@@ -12,16 +12,22 @@ class PaymentService {
             headers: {
                 Authorization: `Bearer ${STRIPE_SECRET_KEY}`
             }
+        }).catch(e => {
+            throw e;
         });
 
         const price = price_data.data.id;
-        const res = await axios.post("https://api.stripe.com/v1/payment_links", `?line_items[][price]=` +
+        const res = await axios.post(`https://api.stripe.com/v1/payment_links?line_items[][price]=` +
             `${price}&line_items[][quantity]=1&after_completion[type]=redirect&after_completion[redirect][url]=https://devhack.13lab.tech&` +
-            `metadata[user_id]=${user_id}&metadata[title]=${title}&metadata[status]=${status}&metadata[category]=${category}`, {
+            `metadata[user_id]=${user_id}&metadata[title]=${title}&metadata[status]=${status}&metadata[category]=${category}`, {}, {
             headers: {
                 Authorization: `Bearer ${STRIPE_SECRET_KEY}`
             }
+        }).catch(e => {
+            throw e;
         });
+
+        return res.data;
     }
 }
 
