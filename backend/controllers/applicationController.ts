@@ -82,6 +82,19 @@ class ApplicationController {
             next(e);
         }
     }
+
+    async updateApplication(req: Request, res: Response, next: NextFunction) {
+        try {
+            const {id} = req.params;
+            const {title, status, description, category, price, date} = req.body;
+            await validationService.updateApplication(+id);
+            const application = await applicationService.updateApplication(+id, title, status, description,
+                category, price, date);
+            return res.json({ok: true, message: 'Application successfully updated', application});
+        } catch (e) {
+            next(e);
+        }
+    }
 }
 
 export default new ApplicationController();

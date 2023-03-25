@@ -13,6 +13,7 @@ router.get("/getApplicationsByCategory/:category", applicationController.getAppl
 router.get("/getMyApplications", authMiddleware, applicationController.getMyApplications);
 
 router.post("/createApplication", authMiddleware, applicationController.createApplication);
+router.patch("/updateApplication/:id", applicationController.updateApplication);
 
 
 export default router;

@@ -34,6 +34,11 @@ class ValidationService {
         if (!price)
             throw ApiError.BadRequest('Price is required', 'price_is_required');
     }
+
+    updateApplication(id: number) {
+        if (!id)
+            throw ApiError.BadRequest('Id is required', 'id_is_required');
+    }
 }
 
 export default new ValidationService();
