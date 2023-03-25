@@ -17,7 +17,7 @@ export default async function (req: Request, res: Response, next: NextFunction) 
             if (decoded) {
                 const id: number = decoded.id; // user id
 
-                const user = await User.findByPk(id, {include: ['farm']});
+                const user = await User.findByPk(id);
                 if (!user)
                     return next(ApiError.BadRequest('User not found', 'user_not_found'));
                 (req as UserRequest).user = user;
