@@ -1,0 +1,148 @@
+/**
+* @desc         override styles for antd custom
+* @requires     variables, placeholders
+*/
+
+// typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+}
+
+
+// layout
+.ant-row {
+  width: 100%;
+}
+
+// header
+.ant-layout-header {
+  @extend %flex-row;
+  @extend %flex-center;
+
+  width: 100%;
+  padding: 6rem 0;
+
+  background: $header-color !important;
+
+  color: black !important;
+
+  & > .ant-col {
+    @extend %flex-row;
+    @extend %flex-center;
+    height: 100%;
+  }
+}
+
+// buttons
+.ant-btn {
+  height: auto;
+}
+
+// inputs
+.ant-input {
+  //padding: $fs-xxsmall $fs-regular;
+
+  background: transparent;
+}
+
+// menu
+.ant-menu {
+  @extend %flex-center;
+
+  background: transparent !important;
+
+  &-item {
+    font-weight: $fw-semi-bold;
+    color: $primary-light-color;
+
+    &:hover {
+      color: $primary-dark-color !important;
+    }
+  }
+}
+
+// select
+.ant-select {
+  width: 100%;
+
+  &-dropdown {
+    background: $secondary-light-color !important;
+  }
+
+  &-item-option {
+    &-active {
+      background: $secondary-dark-color !important;
+    }
+
+    &-selected {
+      background: $primary-dark-color !important;
+    }
+  }
+}
+
+// spin
+.ant-spin {
+  &-dot-item {
+    background: $primary-light-color !important;
+  }
+
+  &-text {
+    font-size: $fs-medium;
+    color: $primary-light-color;
+  }
+}
+
+// tooltip
+.ant-tooltip {
+  &-arrow {
+    border-color: $secondary-dark-color !important;
+  }
+
+  &-inner {
+    background: $primary-dark-color !important;
+    color: $primary-light-color !important;
+  }
+}
+
+// list
+.ant-list-item {
+  border-block-end: none!important;
+  &-meta {
+    &-description {
+      color: $primary-light-color !important;
+    }
+    &-content {
+      @extend %flex-column;
+      gap: $fs-regular
+    }
+  }
+}
+
+// form
+.ant-form-item-control-input-content {
+  //@extend %flex-row;
+  //@extend %flex-center;
+  //gap: $fs-xxsmall;
+}
+
+// custom class
+.flex-center {
+  display: flex;
+  @extend %flex-center;
+}
+
+// collapse
+.ant-space {
+  @extend %flex-row;
+  justify-content: center!important;
+
+  .all-services__accordion {
+
+    width: 100vw!important;
+  }
+}

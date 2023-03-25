@@ -1,0 +1,84 @@
+/**
+* @desc         set up variables.
+* @requires     none
+*/
+
+// [color - variables]
+// branding
+$primary-dark-color: #C60707FF;
+$primary-light-color: #ffffff;
+$secondary-dark-color: #111111FF;
+$secondary-light-color: #3F3E3CFF;
+$info-light-color: #FFE600;
+$info-dark-color: #ECAFAF;
+
+// table colors
+$table-header-color: $primary-dark-color;
+$table-cell-color-1: $secondary-light-color;
+$table-cell-color-2: $secondary-dark-color;
+$table-cell-color-3: rgba($secondary-dark-color, 0.6);
+
+// header colors
+$header-color: transparent;
+
+// aside colors
+$aside-color: rgba($secondary-light-color, 0.8);
+
+// button colors
+$greeting-button-color: rgba($primary-dark-color, 0.8);
+$greeting-button-hover-color: $primary-dark-color;
+$greeting-button-shadow: 4px 4px 20px $primary-dark-color;
+
+// font size
+$fs-xxsmall: 1.2rem;
+$fs-xsmall: 1.4rem;
+$fs-small: 1.8rem;
+$fs-regular: 2rem; // -> base size
+$fs-medium: 2.4rem;
+$fs-large: 2.8rem;
+$fs-xlarge: 3.2rem;
+$fs-xxlarge: 3.6rem;
+$fs-giant: 4.8rem;
+//$fs-xxlarge: 3.6rem;
+
+
+// webkit
+$webkit-bg: rgba($primary-dark-color, .8);
+
+// font family
+$ff-semibold: "MontserratSemiBold", sans-serif;
+$ff-bold: "MontserratBold", sans-serif;
+$ff-medium: "MontserratMedium", sans-serif;
+$ff-regular: "MontserratRegular", sans-serif;
+$ff-light: "MontserratLight", sans-serif;
+$ff-code: Consolas, Monaco, "Lucida Console", monospace;
+
+// font weights
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+
+// inline hights
+$base-line-height: normal;
+
+// [action - variables]
+// hover
+$primary-hover-color-1: rgba($primary-dark-color, 0.2);
+$primary-hover-color-2: rgba($primary-dark-color, 0.4);
+$primary-hover-color-3: rgba($primary-dark-color, 0.6);
+
+// [breakpoints - variables]
+$xxl: 1400px;
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 540px;
+$xs: 360px;
+
+// [shadow - variables]
+// shadows
+$box-shadow-light: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.06);
+$box-shadow-medium: 0 8px 11px rgba(0, 0, 0, 0.1), 0 9px 12px rgba(0, 0, 0, 0.2);
+
+$text-shadow-light: $secondary-dark-color 1px 1px 5px;

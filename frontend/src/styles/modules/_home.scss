@@ -1,0 +1,13 @@
+/**
+* @desc         home module styles
+* @requires     variables, placeholders
+*/
+
+.side-info {
+  width: 100%;
+  padding: $fs-regular;
+
+  margin-right: -40%;
+
+  background: $aside-color;
+}

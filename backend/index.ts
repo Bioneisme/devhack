@@ -4,12 +4,13 @@ import errorMiddleware from "./middlewares/errorMiddleware";
 import userRoute from "./routes/userRoute";
 import adminRoute from "./routes/adminRoute";
 import applicationRoute from "./routes/applicationRoute";
+import maintenanceRoute from "./routes/maintenanceRoute";
+import paymentRoute from "./routes/paymentRoute";
 import {CLIENT_URL, CLIENT_URL_DEV, SERVER_PORT} from "./config/settings";
 import logger from "./config/logger";
 import {DB} from "./config/database";
 import cookieParser from "cookie-parser";
 import express, {Application} from "express";
-import maintenanceRoute from "./routes/maintenanceRoute";
 
 const app: Application = express();
 
@@ -25,6 +26,7 @@ app.use("/api/users", userRoute);
 app.use("/api/admins", adminRoute);
 app.use("/api/applications", applicationRoute);
 app.use("/api/services", maintenanceRoute);
+app.use("/api/payments", paymentRoute);
 app.use(errorMiddleware); // Error handling
 
 app.listen(SERVER_PORT, async () => {

@@ -42,19 +42,19 @@ services:
     networks:
       - shared-network
 
-#  frontend:
-#    image: 'devhack-frontend:dev1'
-#    container_name: devhack-frontend
-#    restart: always
-#    build:
-#      context: frontend
-#    ports:
-#      - "3000:3000"
-#    depends_on:
-#      - backend
-#    networks:
-#      - shared-network
-#
+  frontend:
+    image: 'devhack-frontend:dev1'
+    container_name: devhack-frontend
+    restart: always
+    build:
+      context: frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - shared-network
+
   nginx:
     image: nginx:latest
     container_name: devhack-nginx

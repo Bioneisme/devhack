@@ -1,0 +1,11 @@
+/**
+* @desc         mixins of the app.
+* @requires     variables.scss
+*/
+
+
+// responsive breakpoint manager
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}

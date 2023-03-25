@@ -1,0 +1,60 @@
+/**
+* @desc         adds default text styles
+* @requires     none
+*/
+
+@font-face {
+  font-family: "MontserratSemiBold";
+  src: url("/fonts/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MontserratBold";
+  src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MontserratMedium";
+  src: url("/fonts/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MontserratRegular";
+  src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MontserratLight";
+  src: url("/fonts/Montserrat-Light.ttf") format("truetype");
+}
+
+//body {
+//  line-height: $base-line-height;
+//}
+//
+//body,
+//input,
+//select,
+//textarea {
+//  font-family: $ff-light !important;
+//}
+//
+//// headings and paragraph
+//h1,
+//h2,
+//h3,
+//h4,
+//h5,
+//h6 {
+//  font-style: normal;
+//  font-family: $ff-semibold;
+//}
+//
+//h1 {
+//  font-size: $fs-regular;
+//}
+//
+//pre,
+//code {
+//  font-family: $ff-code;
+//}

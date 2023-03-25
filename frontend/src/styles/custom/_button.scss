@@ -1,0 +1,23 @@
+/**
+* @desc         button styles which used in auth pages
+* @requires     variables, placeholders
+*/
+
+.custom-button {
+  @extend %flex-row;
+  @extend %flex-center;
+  justify-content: center;
+  gap: $fs-xxsmall;
+
+  padding: $fs-xxsmall $fs-medium;
+
+  border-radius: $fs-xxlarge;
+
+  background: $greeting-button-color;
+
+  box-shadow: $greeting-button-shadow;
+
+  &:hover {
+    background: $greeting-button-hover-color !important;;
+  }
+}

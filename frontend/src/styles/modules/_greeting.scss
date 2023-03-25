@@ -1,0 +1,10 @@
+/**
+ * @desc         greeting module styles
+ * @requires     none
+ */
+
+.greeting {
+  @extend %absolute-center;
+
+  text-align: center!important;
+}

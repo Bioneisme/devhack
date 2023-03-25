@@ -1,0 +1,10 @@
+/**
+* @desc         auth module styles
+* @requires     variables, placeholders
+*/
+
+.auth {
+  @extend %absolute-center;
+
+  width: 25%;
+}

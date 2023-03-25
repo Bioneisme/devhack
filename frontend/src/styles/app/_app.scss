@@ -1,0 +1,58 @@
+/**
+* @desc         app styles
+* @requires     variables, placeholders
+*/
+
+:root {
+  font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+}
+
+html {
+  @extend %webkit-scrollbar;
+}
+
+body {
+  overflow: hidden;
+
+  @extend %flex-row;
+  @extend %flex-center;
+
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  background: url("/images/appBackground.png");
+  background-size: cover;
+
+  color: white !important;
+}
+
+.app {
+  @extend %flex-column;
+  @extend %flex-center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+header {
+  height: 15vh;
+  width: 100vw;
+
+  padding: 0 $fs-giant!important;
+}
+
+main {
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  @extend %flex-column;
+  height: 85vh;
+  width: 100%;
+}
+
+section {
+  min-height: 10%;
+
+  padding: $fs-giant!important;
+}
