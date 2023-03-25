@@ -56,7 +56,6 @@ const ApplicationsModule = () => {
               </Panel>
             </Collapse>
             <Collapse
-              defaultActiveKey={ ["2"] }
               expandIcon={ ({ isActive }) => <CaretRightOutlined rotate={ isActive ? 90 : 0 } /> }
             >
               <Panel header="История" key="2">
