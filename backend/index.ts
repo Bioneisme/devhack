@@ -9,6 +9,7 @@ import logger from "./config/logger";
 import {DB} from "./config/database";
 import cookieParser from "cookie-parser";
 import express, {Application} from "express";
+import maintenanceRoute from "./routes/maintenanceRoute";
 
 const app: Application = express();
 
@@ -23,6 +24,7 @@ app.use(logging); // Logging all routes
 app.use("/api/users", userRoute);
 app.use("/api/admins", adminRoute);
 app.use("/api/applications", applicationRoute);
+app.use("/api/services", maintenanceRoute);
 app.use(errorMiddleware); // Error handling
 
 app.listen(SERVER_PORT, async () => {

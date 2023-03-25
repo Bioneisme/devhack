@@ -39,6 +39,15 @@ class ValidationService {
         if (!id)
             throw ApiError.BadRequest('Id is required', 'id_is_required');
     }
+
+    createMaintenance(name: string, category: string, time_to_complete: string) {
+        if (!name)
+            throw ApiError.BadRequest('Name is required', 'name_is_required');
+        if (!category)
+            throw ApiError.BadRequest('Category is required', 'category_is_required');
+        if (!time_to_complete)
+            throw ApiError.BadRequest('Time to complete is required', 'time_to_complete_is_required');
+    }
 }
 
 export default new ValidationService();
