@@ -7,7 +7,9 @@ import paymentService from "../services/paymentService";
 class PaymentController {
     async callback(req: Request, res: Response, next: NextFunction) {
         try {
-            console.log(req.params);
+            const id = req.params.id;
+            await paymentService.callback(+id);
+
             return res.redirect('https://devhack.13lab.tech');
         } catch (e) {
             next(e);
