@@ -3,6 +3,7 @@ import {logging} from "./middlewares/loggingMiddleware";
 import errorMiddleware from "./middlewares/errorMiddleware";
 import userRoute from "./routes/userRoute";
 import adminRoute from "./routes/adminRoute";
+import applicationRoute from "./routes/applicationRoute";
 import {CLIENT_URL, CLIENT_URL_DEV, SERVER_PORT} from "./config/settings";
 import logger from "./config/logger";
 import {DB} from "./config/database";
@@ -21,6 +22,7 @@ app.use(cookieParser());
 app.use(logging); // Logging all routes
 app.use("/api/users", userRoute);
 app.use("/api/admins", adminRoute);
+app.use("/api/applications", applicationRoute);
 app.use(errorMiddleware); // Error handling
 
 app.listen(SERVER_PORT, async () => {

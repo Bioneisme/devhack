@@ -12,11 +12,17 @@ export class Application extends Model {
     title!: string;
 
     @Column({type: DataType.STRING, allowNull: false})
-    description!: string;
-
-    @Column({type: DataType.STRING, allowNull: false})
     status!: string;
 
     @Column({type: DataType.STRING, allowNull: false})
     category!: string;
+
+    @Column({type: DataType.INTEGER, allowNull: false})
+    price!: number;
+
+    @Column({type: DataType.STRING, allowNull: true})
+    description?: string;
+
+    @Column({type: DataType.DATE, allowNull: true})
+    date?: Date;
 }
