@@ -20,14 +20,14 @@ const ReportsModule = () => {
         <Col span={ 12 }>
           <Row gutter={ [0, 24] }>
             <Col span={ 24 }>
-              <Title level={ 2 }>
+              <Title level={ 3 }>
                 Активные
               </Title>
             </Col>
             <Col span={ 24 }>
               <Space
                 direction="vertical"
-                size="large"
+                size="middle"
               >
                 <Title level={4}>Ремонт крыши</Title>
                 <ProgressBar value={ 40000 } maxValue={ 100000 } />
@@ -40,8 +40,8 @@ const ReportsModule = () => {
         <Col span={ 12 }>
           <Row gutter={ [0, 24] }>
             <Col span={ 24 }>
-              <Title level={ 2 }>
-                Отчеты по выполненным <br />работам со взносов
+              <Title level={ 3 }>
+                Отчеты по выполненным работам со взносов
               </Title>
             </Col>
             <Col span={ 24 }>

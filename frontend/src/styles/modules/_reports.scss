@@ -9,7 +9,7 @@
   }
 
   ul li {
-    font-size: $fs-regular;
+    font-size: $fs-small;
   }
 }
 
@@ -21,14 +21,14 @@
     @extend %flex-row;
     @extend %flex-center;
 
-    height: 6rem;
+    height: 4rem;
     width: 40rem;
 
     background: rgba($primary-light-color, 0.5);
 
     border-radius: 10rem;
 
-    font-size: $fs-regular;
+    font-size: $fs-xsmall;
   }
 
   &-line {
