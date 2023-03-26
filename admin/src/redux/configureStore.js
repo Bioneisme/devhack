@@ -8,14 +8,12 @@ import storage from 'redux-persist/lib/storage';
 import { userReducer } from './users/reducers.js';
 import { readNotificationReducer } from './notification/reducers.js';
 import { readMessageReducer } from './message/reducers.js';
-import { headerSearchReducer } from './headerSearch/reducers.js';
 import { authReducer } from './authentication/reducers';
 import { chartContentReducer } from './chartContent/reducers.js';
 import { botManagementReducer } from "./botManagement/reducers.js";
 import { referralsManagementReducer } from "./referralsManagement/reducers.js";
 
 export const rootReducer = combineReducers({
-    headerSearchData: headerSearchReducer,
     message: readMessageReducer,
     notification: readNotificationReducer,
     users: userReducer,

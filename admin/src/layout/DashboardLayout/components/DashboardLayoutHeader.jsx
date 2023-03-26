@@ -8,7 +8,6 @@ import { SmallScreenAuthInfo, SmallScreenSearch } from '../style/style.js';
 import { LayoutContext } from '../context/context.jsx';
 
 import AuthInfo from '../../../components/utilities/auth-info/info.jsx';
-import HeaderSearch from '../../../components/headerSearch/headerSearch.jsx';
 
 import SidebarRightLogo from '../../../static/img/icon/right.svg';
 import SidebarLeftLogo from '../../../static/img/icon/left.svg';
@@ -39,7 +38,7 @@ const DashboardLayoutHeader = () => {
           </Col>
 
           <Col lg={ 14 } md={ 8 } sm={ 0 } xs={ 0 }>
-            <HeaderSearch />
+            {/*<HeaderSearch />*/}
           </Col>
 
           <Col lg={ 5 } md={ 10 } sm={ 0 } xs={ 0 }>
@@ -63,7 +62,7 @@ const DashboardLayoutHeader = () => {
           <Col md={ 0 } sm={ 24 } xs={ 24 }>
             <div className='small-screen-headerRight'>
               <SmallScreenSearch hide={ searchHide }>
-                <HeaderSearch />
+                {/*<HeaderSearch />*/}
               </SmallScreenSearch>
               <SmallScreenAuthInfo hide={ hide }>
                 <AuthInfo />
