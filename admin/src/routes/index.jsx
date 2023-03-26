@@ -2,8 +2,7 @@ import {LoginPage} from '../pages/LoginPage';
 import {ReferralsPage} from "../pages/ReferralsPage";
 
 export const privateRoutes = [
-  {path: '/dev', component: <ReferralsPage />, id: 1},
-
+    {path: '/dev', component: <ReferralsPage />, id: 1},
 ];
 
 export const publicRoutes = [
