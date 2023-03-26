@@ -37,6 +37,7 @@ services:
       - CLIENT_URL=https://devhack.13lab.tech
       - CLIENT_URL_ADMIN=https://devhack-admin.13lab.tech
       - CLIENT_URL_ADMIN_DEV=http://localhost:4000
+      - STRIPE_SECRET_KEY=sk_test_51MpFYLKZJq8SRj14db4z4YuE4ntzEfcUyd79pcO9EIUJWPULKqxyFlGbCU59ddo3n3JscMxFGTXRZrQ2tB2d1PfF00pL6epJMS
     ports:
       - "5000:5000"
     depends_on:
