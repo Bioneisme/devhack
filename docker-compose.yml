@@ -57,18 +57,18 @@ services:
     networks:
       - shared-network
 
-  admin:
-    image: 'devhack-admin:dev1'
-    container_name: devhack-admin
-    restart: always
-    build:
-      context: admin
-    ports:
-      - "4000:4000"
-    depends_on:
-      - backend
-    networks:
-      - shared-network
+#  admin:
+#    image: 'devhack-admin:dev1'
+#    container_name: devhack-admin
+#    restart: always
+#    build:
+#      context: admin
+#    ports:
+#      - "4000:4000"
+#    depends_on:
+#      - backend
+#    networks:
+#      - shared-network
 
   nginx:
     image: nginx:latest
