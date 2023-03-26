@@ -16,6 +16,7 @@ export const JWT_REFRESH_SECRET: string = process.env.JWT_REFRESH_SECRET || DEFA
 export const CLIENT_URL: string = process.env.CLIENT_URL || DEFAULT_CLIENT_URL;
 export const CLIENT_URL_DEV: string = process.env.CLIENT_URL_DEV || DEFAULT_CLIENT_URL;
 export const CLIENT_URL_ADMIN: string = process.env.CLIENT_URL_ADMIN || DEFAULT_CLIENT_URL;
+export const CLIENT_URL_ADMIN_DEV: string = process.env.CLIENT_URL_ADMIN_DEV || DEFAULT_CLIENT_URL;
 export const STRIPE_SECRET_KEY: string = process.env.STRIPE_SECRET_KEY as string;
 export const BOT_TOKEN: string = process.env.BOT_TOKEN as string;
 export const LOGS_CHAT_ID: string = process.env.LOGS_CHAT_ID as string;
