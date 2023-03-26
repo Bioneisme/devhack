@@ -9,6 +9,10 @@ import {useInput} from "../../../hooks/useInput.js";
 const Children = ({item}) => {
     const status = useInput(item.status);
     const executor = useInput(item.executor);
+    const description = useInput(item.description);
+    const price = useInput(item.price);
+    const date = useInput(item.data ? moment(item.date).format('DD.MM.YYYY HH:mm') : null);
+
     const data = [
         {
             key: '1',
@@ -52,44 +56,77 @@ const Children = ({item}) => {
         },
     ];
 
-    const saveStatus = (value) => {
-        // setStatus(value);
-        // API.post('/referrals/update', {
-        //     id: item.id,
-        //     status: status.value
-        // })
+    const saveData = () => {
+        API.patch('applications/updateApplication/' + item.id, {
+            executor: executor.value,
+            description: description.value,
+            price: price.value,
+            date: date.value
+        }).then(res => {
+
+        }).catch(e => {
+            console.log(e)
+        });
+    }
+
+    const changeStatus = ({key}) => {
+        const value = data.find(item => item.key === key).label.props.children;
+        API.patch('applications/updateApplication/' + item.id, {
+            status: value
+        }).then(res => {
+            status.setValue(value);
+        }).catch(e => {
+            console.log(e)
+        });
     }
     return <>
-        <h3>
-            {item.id}. {item.title}
-        </h3>
-        <h4>
-            Стоимость: {item.price} тенге
-        </h4>
-        <div>
-            Описание: {item.description ? item.description : 'Не указано'}
-        </div>
         <div style={{
-            display: 'flex',
-            alignItems: 'center'
+            marginBottom: 20,
+            border: '1px solid #e8e8e8',
         }}>
-            Статус заявки:
-            <Dropdown menu={{items: data}} placement="bottom" arrow>
-                <Button>{status.value}</Button>
-            </Dropdown>
-        </div>
-        <div style={{
-            display: 'flex',
-            alignItems: 'center'
-        }}>
-            Испольнитель:
-            <InputGroup inputObj={executor} type='input' saveValue={saveStatus} width={14}/>
-        </div>
-        <div>
-            Дата исполнения: {item.data ? moment(item.date).format('DD.MM.YYYY HH:mm') : 'Не указана'}
-        </div>
-        <div>
-            Дата создания заявки: {moment(item.createdAt).format('DD.MM.YYYY HH:mm')}
+            <h3>
+                {item.id}. {item.title}
+            </h3>
+            <h4 style={{
+                display: 'flex',
+                alignItems: 'center'
+            }}>
+                Стоимость:
+                <InputGroup inputObj={price} type='input' saveValue={saveData} width={14}/>
+            </h4>
+            <div style={{
+                display: 'flex',
+                alignItems: 'center'
+            }}>
+                Описание:
+                <InputGroup inputObj={description} type='input' saveValue={saveData} width={14}/>
+            </div>
+            <div style={{
+                display: 'flex',
+                alignItems: 'center'
+            }}>
+                Статус заявки:
+                <Dropdown menu={{items: data, onClick: changeStatus}} placement="bottom" arrow>
+                    <Button onClick={e => e.preventDefault()}>{status.value}</Button>
+                </Dropdown>
+            </div>
+            <div style={{
+                display: 'flex',
+                alignItems: 'center'
+            }}>
+                Испольнитель:
+                <InputGroup inputObj={executor} type='input' saveValue={saveData} width={14}/>
+            </div>
+            <div style={{
+                display: 'flex',
+                alignItems: 'center'
+            }}>
+                Дата исполнения:
+                <InputGroup inputObj={date} type='input' saveValue={saveData} width={14}/>
+            </div>
+            <div>
+                Дата создания заявки: {moment(item.createdAt).format('DD.MM.YYYY HH:mm')}
+            </div>
         </div>
     </>;
 }
@@ -104,8 +141,6 @@ const ApplicationModule = () => {
         async function fetchData() {
             try {
                 API.get('applications/getApplications').then(res => {
-                    console.log(res);
-                    setItems(res.data.applications);
                     setUnpaidItems(res.data.applications.filter(item => item.status === 'Не оплачено'));
                 }).catch(e => {
                     console.log(e);
