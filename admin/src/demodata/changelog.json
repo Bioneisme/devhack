@@ -1,0 +1,251 @@
+[   
+    {
+        "id": 20,
+        "date": "Jan 8, 2023",
+        "version":"3.0.1",        
+        "fixed": [
+            "Kanban Board Issue Fix"           
+        ]
+    },    
+    {
+        "id": 19,
+        "date": "Oct 13, 2022",
+        "version":"3.0.0",        
+        "fixed": [
+            "Minor Style Fix"           
+        ],
+        "updated": [
+            "React 16.14.0 to 18.2.0"
+        ]
+    },    
+    {
+        "id": 18,
+        "date": "Jan 31, 2022",
+        "version":"2.7.0",        
+        "fixed": [
+            "Minor Style Fix"           
+        ],
+        "updated": [
+            "Update NPM Package with latest compatible",
+            "Wizard Form Validation"
+        ]
+    },
+    {
+        "id": 17,
+        "date": "May 23, 2021",
+        "version":"2.6.0",
+        "new": [
+            "Axios Crud",
+            "Redux devtools"
+        ]
+    },
+    {
+        "id": 16,
+        "date": "April 6, 2021",
+        "version":"2.5.0",        
+        "fixed": [
+            "Minor Style Issues"           
+        ],
+        "updated": [
+            "Update Invoice Print Button Functionality",
+            "Update Both Side Menu & Top Menu"
+        ]
+    },
+    {
+        "id": 15,
+        "date": "Feb 11, 2021",
+        "version":"2.4.0",        
+        "fixed": [
+            "Sidebar Color issue"           
+        ],
+        "updated": [
+            "Update NPM Package with latest compatible"
+        ]
+    },
+    {
+        "id": 14,
+        "date": "Jan 28, 2021",
+        "version":"2.3.0",
+        "new":[
+            "Task App",
+            "Form Layouts Pages",
+            "Form Elements Page",
+            "Form Components Page",      
+            "Form Validation Page"   
+        ],
+        "fixed": [
+            "Sidebar Todo page navigation issue",
+            "Recent Order Table Alignment issue"
+        ],
+        "updated": [
+            "Footer Updated"
+        ]
+    },
+    {
+        "id": 13,
+        "date": "Jan 05, 2021",
+        "version":"2.2.0",
+        "new":[
+            "Kanban Board App",
+            "Import & Export App",
+            "Knowledge Base Page",
+            "Support Center Page"          
+        ],
+        "fixed": [
+            "Contact app Edit state issue",
+            "Firebase CRUD Edit state issue",
+            "Menu Item icon style issue"
+        ]
+    },
+    {
+        "id": 12,
+        "date": "Dec 06, 2020",
+        "version":"2.1.0",
+        "new":[
+            "CRM Dashboard Demo",
+            "Sales Dashboard Demo",
+            "4 New Users Card Styles",
+            "Testimonials Page",
+            "13+ Banners Styles"            
+        ],
+        "fixed": [
+            "Style issue"
+        ],
+        "updated": [
+            "Update Timeline In components"            
+        ]
+    },
+    {
+        "id": 11,
+        "date": "Nov 12, 2020",
+        "version":"2.0.0",
+        "new":[
+            "New 8 card styles",
+            "Contact App 'add new contact' page",
+            "Contact App grid style",
+            "Editor Page",
+            "Wizard Page",
+            "Widgets Page",
+            "Coming Soon Page",
+            "Changelog Page"
+        ],
+        "fixed": [
+            "Content app button style issue"
+        ],
+        "updated": [
+            "Cards",
+            "Contact App",
+            "Menu Item Rearrange",
+            "Update note app with drag & drop"
+        ]
+    },
+    {
+        "id": 10,
+        "date": "Oct 29, 2020",
+        "version":"1.8.0",
+        "new":["StrikingDash Boilerplate"],
+        "fixed": false,
+        "updated": false
+    },
+    {
+        "id": 9,
+        "date": "Oct 28, 2020",
+        "version":"1.7.0",
+        "new":["Firebase Authentication", "Auth0 Authentication"],
+        "fixed": false,
+        "updated": false
+    },
+    {
+        "id": 8,
+        "date": "Oct 26, 2020",
+        "version":"1.6.0",
+        "new":["Blank Page"],
+        "fixed": ["Console Error"],
+        "updated": false
+    },
+    {
+        "id": 7,
+        "date": "Oct 20, 2020",
+        "version":"1.5.0",
+        "new":["Calendar App"],
+        "fixed": false,
+        "updated": false
+    },
+    {
+        "id": 6,
+        "date": "Oct 19, 2020",
+        "version":"1.4.1",
+        "new":false,
+        "fixed": false,
+        "updated": [
+            "Update Top Navbar"
+        ]
+    },
+    {
+        "id": 5,
+        "date": "Oct 11, 2020",
+        "version":"1.4.0",
+        "new":[
+            "Social App",
+            "Top Navbar Settings"
+        ],
+        "fixed": 
+        [
+            "image error from chat app"
+        ],
+        "updated": [
+            "Chat app emoji"
+        ]
+      },
+    {
+    "id": 4,
+    "date": "Oct 06, 2020",
+    "version":"1.3.0",
+    "new":false,
+    "fixed": 
+    [
+        "Fixed Css Issues"
+    ],
+    "updated": ["Optimized Loading time"]
+  },
+    {
+      "id": 3,
+      "date": "Oct 02, 2020",
+      "version":"1.2.0",
+      "new": 
+      [
+          "To-do App",
+          "Note App",
+          "Contact App",
+          "Table Dragging Support"          
+      ],
+      "fixed": 
+      [
+          "Fixed Issues"
+      ],
+      "updated": false
+    },    
+    {
+        "id": 2,
+        "date": "Sep 30, 2020",
+        "version":"1.1.0",
+        "new": 
+        [
+            "Added RTL Support"
+        ],
+        "fixed":false,
+        "updated":false
+      },
+      {
+        "id": 1,
+        "date": "Sep 27, 2020",
+        "version":"1.0.0",
+        "new": 
+        [
+            "Initial Release"
+        ],
+        "fixed": false,
+        "updated": false
+      }
+  ]
+  
