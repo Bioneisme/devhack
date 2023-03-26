@@ -1,0 +1,1383 @@
+{
+  "forcastOverview": {
+    "today": {
+      "Engaged": "25,872",
+      "EnLabels": ["0", "4", "8", "12", "16", "20", "24"],
+      "EnData": [150, 100, 200, 250, 200, 300, 150],
+      "Impressions": "98,534",
+      "ImLabels": ["0", "4", "8", "12", "16", "20", "24"],
+      "ImData": [200, 150, 200, 250, 100, 200, 150],
+      "Like": "12,142",
+      "LiLabels": ["0", "4", "8", "12", "16", "20", "24"],
+      "LiData": [150, 100, 200, 250, 200, 300, 150],
+      "Impressions2": "1,432",
+      "ImLabels2": ["0", "4", "8", "12", "16", "20", "24"],
+      "ImData2": [200, 150, 200, 250, 100, 200, 150]
+    },
+    "week": {
+      "Engaged": "55,872",
+      "EnLabels": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      "EnData": [1000, 5000, 1500, 10000, 14000, 24000, 20000],
+      "Impressions": "85,534",
+      "ImLabels": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      "ImData": [10000, 15000, 10000, 15000, 14000, 24000, 20000],
+      "Like": "45,254",
+      "LiLabels": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      "LiData": [100, 300, 150, 200, 500, 400, 500],
+      "Impressions2": "14,452",
+      "ImLabels2": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      "ImData2": [100, 300, 150, 200, 500, 400, 500]
+    },
+    "month": {
+      "Engaged": "98,872",
+      "EnLabels": ["1-5", "6-10", "11-15", "16-20", "21-25", "26-31"],
+      "EnData": [15000, 50000, 15000, 15000, 40000, 24000],
+      "Impressions": "154,534",
+      "ImLabels": ["1-5", "6-10", "11-15", "16-20", "21-25", "26-31"],
+      "ImData": [20000, 40000, 16000, 15000, 30000, 23000],
+      "Like": "120,142",
+      "LiLabels": ["1-5", "6-10", "11-15", "16-20", "21-25", "26-31"],
+      "LiData": [5000, 4000, 16000, 10000, 20000, 23000],
+      "Impressions2": "114,320",
+      "ImLabels2": ["1-5", "6-10", "11-15", "16-20", "21-25", "26-31"],
+      "ImData2": [1100, 1300, 1500, 2000, 500, 1400, 800]
+    },
+    "year": {
+      "Engaged": "514,872",
+      "EnLabels": ["Jan", "Feb", "Mar", "App", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      "EnData": [95000, 55000, 19000, 55000, 90000, 240000, 95000, 55000, 19000, 55000, 66000, 90000, 240000],
+      "Impressions": "954,534",
+      "ImLabels": ["Jan", "Feb", "Mar", "App", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      "ImData": [98000, 65000, 20000, 55000, 90000, 240000, 95000, 55000, 19000, 55000, 66000, 90000, 240000],
+      "Like": "520,142",
+      "LiLabels": ["Jan", "Feb", "Mar", "App", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      "LiData": [9500, 5500, 1900, 5500, 9000, 24000, 9500, 5500, 1900, 5500, 9000, 10000, 24000],
+      "Impressions2": "445,320",
+      "ImLabels2": ["Jan", "Feb", "Mar", "App", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      "ImData2": [5000, 7000, 19000, 15000, 19000, 20000, 35000, 20000, 19000, 27000, 10000, 15000, 20000]
+    }
+  },
+
+  "youtubeSubscribe": {
+    "week": {
+      "Subscribe": "25,472",
+      "labels": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      "gained": [1000, 5000, 1500, 10000, 14000, 24000, 20000],
+      "lost": [800, 3500, 1000, 9000, 10000, 14000, 15000],
+      "percent": 25
+    },
+    "month": {
+      "Subscribe": "515,872",
+      "labels": ["1-5", "6-10", "11-15", "16-20", "21-25", "26-31"],
+      "gained": [25000, 50000, 15000, 15000, 40000, 24000],
+      "lost": [20000, 40000, 12000, 13000, 30000, 22000],
+      "percent": 50
+    },
+    "year": {
+      "Subscribe": "985,872",
+      "labels": ["Jan", "Feb", "Mar", "App", "May", "Jun", "Jul", "Aug", "Sep", "Nov", "Oct", "Dec"],
+      "gained": [95000, 55000, 19000, 55000, 90000, 240000, 95000, 55000, 19000, 55000, 90000, 240000],
+      "lost": [90000, 50000, 20000, 50000, 80000, 300000, 90000, 55000, 23000, 50000, 80000, 200000],
+      "percent": 75
+    }
+  },
+  "closedDeals": {
+    "week": {      
+      "labels": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      "won": [100, 500, 150, 1000, 1400, 2400, 2000],
+      "amount": [80, 350, 100, 900, 1000, 1400, 1500],
+      "percent": 25
+    },
+    "month": {      
+      "labels": ["1-5", "6-10", "11-15", "16-20", "21-25", "26-31"],
+      "won": [2500, 5000, 1500, 1500, 4000, 2400],
+      "amount": [2000, 4000, 1200, 1300, 3000, 2200],
+      "percent": 50
+    },
+    "year": {      
+      "labels": ["Jan", "Feb", "Mar", "App", "May", "Jun", "Jul", "Aug", "Sep", "Nov", "Oct", "Dec"],
+      "won": [9500, 5500, 1900, 5500, 9000, 24000, 9500, 5500, 1900, 5500, 9000, 24000],
+      "amount": [9000, 5000, 2000, 5000, 8000, 30000, 9000, 5500, 2300, 5000, 8000, 20000],
+      "percent": 75
+    }
+  },
+
+  "SocialTrafficMetrics": {
+    "today": {
+      "facebook": {
+        "users": "3,397",
+        "newUsers": "422",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "twitter": {
+        "users": "2,397",
+        "newUsers": "422",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "linkdin": {
+        "users": "1,397",
+        "newUsers": "422",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "youtube": {
+        "users": "4,397",
+        "newUsers": "422",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "pinterest": {
+        "users": "597",
+        "newUsers": "422",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "google": {
+        "users": "3,397",
+        "newUsers": "422",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      }
+    },
+    "week": {
+      "facebook": {
+        "users": "7,397",
+        "newUsers": "1402",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "twitter": {
+        "users": "5,397",
+        "newUsers": "1020",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "linkdin": {
+        "users": "4,397",
+        "newUsers": "1200",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "youtube": {
+        "users": "15,397",
+        "newUsers": "10020",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "pinterest": {
+        "users": "1200",
+        "newUsers": "622",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "google": {
+        "users": "8,397",
+        "newUsers": "2500",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      }
+    },
+    "month": {
+      "facebook": {
+        "users": "17,397",
+        "newUsers": "5002",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "twitter": {
+        "users": "15,397",
+        "newUsers": "6000",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "linkdin": {
+        "users": "12,397",
+        "newUsers": "4002",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "youtube": {
+        "users": "35,397",
+        "newUsers": "10010",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "pinterest": {
+        "users": "7000",
+        "newUsers": "3200",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "google": {
+        "users": "17,397",
+        "newUsers": "5000",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      }
+    },
+    "year": {
+      "facebook": {
+        "users": "70,397",
+        "newUsers": "25002",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "twitter": {
+        "users": "60,397",
+        "newUsers": "35100",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "linkdin": {
+        "users": "40020",
+        "newUsers": "20010",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "youtube": {
+        "users": "90,397",
+        "newUsers": "50010",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "pinterest": {
+        "users": "25000",
+        "newUsers": "12010",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      },
+      "google": {
+        "users": "57,397",
+        "newUsers": "45000",
+        "session": "2,584",
+        "bounceRate": "30.35%",
+        "pagesSession": "2.50",
+        "avg": "00:01:05"
+      }
+    }
+  },
+  "twitterOverview": {
+    "week": {
+      "twist": {
+        "data": "472",
+        "chartValue": [10, 25, 28, 22, 15, 18, 22, 20, 15, 17, 25, 30]
+      },
+      "impressions": {
+        "data": "2K",
+        "chartValue": [0, -10, 18, 5, 17, 0, 1, 2, 11, 30, 15, 30]
+      },
+      "retweets": {
+        "data": 78,
+        "chartValue": [5, 10, 8, 10, 7, 10, 15, 20, 12, 17, 15, 10]
+      },
+      "rate": {
+        "data": "4.8",
+        "chartValue": [0, 10, 0, 15, 0, 18, 0, 10, 12, 18, 25, 30]
+      },
+      "followers": {
+        "data": 178,
+        "chartValue": [5, 10, 8, 10, 7, 10, 15, 20, 12, 17, 15, 10]
+      }
+    },
+    "month": {
+      "twist": {
+        "data": "2472",
+        "chartValue": [0, 10, 8, 15, 7, 10, 15, 20, 18, 35, 25, 30]
+      },
+      "impressions": {
+        "data": "8K",
+        "chartValue": [0, -10, 18, 5, 17, 0, 1, 2, 11, 30, 15, 30]
+      },
+      "retweets": {
+        "data": 278,
+        "chartValue": [0, 15, 10, 18, 20, 15, 10, 7, 15, 8, 10, 30]
+      },
+      "rate": {
+        "data": "3.8",
+        "chartValue": [0, 10, 0, 15, 0, 18, 0, 10, 12, 18, 25, 30]
+      },
+      "followers": {
+        "data": 778,
+        "chartValue": [0, 10, 8, 15, 7, 10, 15, 20, 18, 35, 25, 30]
+      }
+    },
+    "year": {
+      "twist": {
+        "data": "5472",
+        "chartValue": [0, 250, 200, 220, 309, 301, 250, 180, 320, 270, 250, 300]
+      },
+      "impressions": {
+        "data": "78K",
+        "chartValue": [0, -10, 18, 5, 17, 0, 1, 2, 11, 30, 15, 30]
+      },
+      "retweets": {
+        "data": 2078,
+        "chartValue": [0, 250, 200, 220, 309, 301, 250, 180, 320, 270, 250, 300]
+      },
+      "rate": {
+        "data": "4.8",
+        "chartValue": [0, 10, 0, 15, 0, 18, 0, 10, 12, 18, 25, 30]
+      },
+      "followers": {
+        "data": 5778,
+        "chartValue": [0, 250, 200, 220, 309, 301, 250, 180, 320, 270, 250, 300]
+      }
+    }
+  },
+  "instagramOverview": {
+    "week": {
+      "post": {
+        "data": "472",
+        "chartValue": [10, 25, 28, 22, 15, 18, 22, 20, 15, 17, 25, 30]
+      },
+      "like": {
+        "data": "2K",
+        "chartValue": [0, -10, 18, 5, 17, 0, 1, 2, 11, 30, 15, 30]
+      },
+      "comments": {
+        "data": 78,
+        "chartValue": [5, 10, 8, 10, 7, 10, 15, 20, 12, 17, 15, 10]
+      },
+      "rate": {
+        "data": "4.8",
+        "chartValue": [0, 10, 0, 15, 0, 18, 0, 10, 12, 18, 25, 30]
+      },
+      "followers": {
+        "data": 178,
+        "chartValue": [5, 10, 8, 10, 7, 10, 15, 20, 12, 17, 15, 10]
+      }
+    },
+    "month": {
+      "post": {
+        "data": "2472",
+        "chartValue": [0, 10, 8, 15, 7, 10, 15, 20, 18, 35, 25, 30]
+      },
+      "like": {
+        "data": "8K",
+        "chartValue": [0, -10, 18, 5, 17, 0, 1, 2, 11, 30, 15, 30]
+      },
+      "comments": {
+        "data": 278,
+        "chartValue": [0, 15, 10, 18, 20, 15, 10, 7, 15, 8, 10, 30]
+      },
+      "rate": {
+        "data": "3.8",
+        "chartValue": [0, 10, 0, 15, 0, 18, 0, 10, 12, 18, 25, 30]
+      },
+      "followers": {
+        "data": 778,
+        "chartValue": [0, 10, 8, 15, 7, 10, 15, 20, 18, 35, 25, 30]
+      }
+    },
+    "year": {
+      "post": {
+        "data": "5472",
+        "chartValue": [0, 250, 200, 220, 309, 301, 250, 180, 320, 270, 250, 300]
+      },
+      "like": {
+        "data": "78K",
+        "chartValue": [0, -10, 18, 5, 17, 0, 1, 2, 11, 30, 15, 30]
+      },
+      "comments": {
+        "data": 2078,
+        "chartValue": [0, 250, 200, 220, 309, 301, 250, 180, 320, 270, 250, 300]
+      },
+      "rate": {
+        "data": "4.8",
+        "chartValue": [0, 10, 0, 15, 0, 18, 0, 10, 12, 18, 25, 30]
+      },
+      "followers": {
+        "data": 5778,
+        "chartValue": [0, 250, 200, 220, 309, 301, 250, 180, 320, 270, 250, 300]
+      }
+    }
+  },
+  "linkdinOverview": {
+    "week": {
+      "post": {
+        "data": "472",
+        "chartValue": [10, 25, 28, 22, 15, 18, 22, 20, 15, 17, 25, 30]
+      },
+      "like": {
+        "data": "2K",
+        "chartValue": [0, -10, 18, 5, 17, 0, 1, 2, 11, 30, 15, 30]
+      },
+      "comments": {
+        "data": 78,
+        "chartValue": [5, 10, 8, 10, 7, 10, 15, 20, 12, 17, 15, 10]
+      },
+      "rate": {
+        "data": "4.8",
+        "chartValue": [0, 10, 0, 15, 0, 18, 0, 10, 12, 18, 25, 30]
+      },
+      "followers": {
+        "data": 178,
+        "chartValue": [5, 10, 8, 10, 7, 10, 15, 20, 12, 17, 15, 10]
+      }
+    },
+    "month": {
+      "post": {
+        "data": "2472",
+        "chartValue": [0, 10, 8, 15, 7, 10, 15, 20, 18, 35, 25, 30]
+      },
+      "like": {
+        "data": "8K",
+        "chartValue": [0, -10, 18, 5, 17, 0, 1, 2, 11, 30, 15, 30]
+      },
+      "comments": {
+        "data": 278,
+        "chartValue": [0, 15, 10, 18, 20, 15, 10, 7, 15, 8, 10, 30]
+      },
+      "rate": {
+        "data": "3.8",
+        "chartValue": [0, 10, 0, 15, 0, 18, 0, 10, 12, 18, 25, 30]
+      },
+      "followers": {
+        "data": 778,
+        "chartValue": [0, 10, 8, 15, 7, 10, 15, 20, 18, 35, 25, 30]
+      }
+    },
+    "year": {
+      "post": {
+        "data": "5472",
+        "chartValue": [0, 250, 200, 220, 309, 301, 250, 180, 320, 270, 250, 300]
+      },
+      "like": {
+        "data": "78K",
+        "chartValue": [0, -10, 18, 5, 17, 0, 1, 2, 11, 30, 15, 30]
+      },
+      "comments": {
+        "data": 2078,
+        "chartValue": [0, 250, 200, 220, 309, 301, 250, 180, 320, 270, 250, 300]
+      },
+      "rate": {
+        "data": "4.8",
+        "chartValue": [0, 10, 0, 15, 0, 18, 0, 10, 12, 18, 25, 30]
+      },
+      "followers": {
+        "data": 5778,
+        "chartValue": [0, 250, 200, 220, 309, 301, 250, 180, 320, 270, 250, 300]
+      }
+    }
+  },
+  "cashFlow": {
+    "week": {
+      "current": "5,472",
+      "in": "5,414",
+      "out": "5,798",
+      "dataIn": [20, 60, 50, 45, 50, 60, 70],
+      "dataOut": [10, 40, 30, 40, 60, 55, 45],
+      "labels": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    },
+    "month": {
+      "current": "25,472",
+      "in": "35,414",
+      "out": "45,798",
+      "dataIn": [20, 60, 50, 45, 50, 60, 70, 45, 45, 70, 75, 80],
+      "dataOut": [30, 40, 30, 40, 60, 55, 45, 35, 30, 90, 45, 50],
+      "labels": ["1-5", "6-10", "11-15", "16-20", "21-25", "26-31"]
+    },
+    "year": {
+      "current": "55,472",
+      "in": "50,414",
+      "out": "95,798",
+      "dataIn": [20, 60, 50, 45, 50, 60, 70, 40, 45, 35, 25, 30],
+      "dataOut": [10, 40, 30, 40, 60, 55, 45, 35, 30, 20, 15, 20],
+      "labels": ["Jan", "Feb", "Mar", "App", "May", "Jun", "Jul", "Aug", "Sep", "Nov", "Oct", "Dec"]
+    }
+  },
+  "income": {
+    "week": {
+      "total": ["52,784", [20, 60, 50, 45, 50, 60, 70]],
+      "sale": ["74,820", [10, 20, 30, 40, 30, 20, 45]],
+      "expense": ["32,143", [5, 10, 7, 15, 25, 30, 20]],
+      "profit": ["52,727", [10, 40, 30, 40, 60, 55, 45]],
+      "labels": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    },
+    "month": {
+      "total": ["952,784", [70, 100, 80, 85, 90, 87, 110]],
+      "sale": ["274,820", [50, 70, 50, 40, 60, 70, 50]],
+      "expense": ["532,143", [35, 30, 40, 50, 45, 60, 40]],
+      "profit": ["2952,784", [50, 70, 50, 40, 60, 70, 50]],
+      "labels": ["1-5", "6-10", "11-15", "16-20", "21-25", "26-31"]
+    },
+    "year": {
+      "total": ["2052,784", [170, 900, 380, 285, 390, 587, 710, 170, 900, 380, 285, 390]],
+      "sale": ["3052,784", [150, 270, 350, 240, 360, 570, 450, 170, 900, 380, 285, 390]],
+      "expense": ["5052,784", [135, 230, 340, 250, 345, 560, 440, 170, 900, 380, 285, 390]],
+      "profit": ["4052,784", [150, 270, 350, 240, 360, 570, 450, 170, 900, 380, 285, 390]],
+      "labels": ["Jan", "Feb", "Mar", "App", "May", "Jun", "Jul", "Aug", "Sep", "Nov", "Oct", "Dec"]
+    }
+  },
+  "performance": {
+    "week": {
+      "users": ["22.6K", [20,25,25,30,35,30,25,25], [40,40,30,35,20,25,40,35]],
+      "sessions": ["27.2k", [25, 35, 30, 40, 25, 25, 40], [45, 20, 35, 32, 40, 30, 25]],
+      "bounce": ["26.3%", [40, 30, 35, 35, 30, 30, 25], [20, 30, 25, 25, 40, 30, 25]],
+      "duration": ["2m 18s", [40, 35, 35, 30, 25, 25, 35], [30, 25, 35, 30, 30, 35, 30]],
+      "labels": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    },
+    "month": {
+      "users": [
+        "52.6K",
+        [65, 35, 45, 42, 65, 60, 42, 45, 35, 55, 40, 65],
+        [45, 20, 35, 32, 50, 45, 32, 35, 25, 40, 30, 55]
+      ],
+      "sessions": [
+        "47.2k",
+        [65, 35, 45, 42, 65, 60, 42, 45, 35, 55, 40, 30],
+        [45, 20, 35, 32, 50, 45, 32, 35, 25, 40, 30, 25]
+      ],
+      "bounce": [
+        "26.3%",
+        [35, 35, 45, 42, 65, 60, 42, 45, 35, 55, 40, 30],
+        [20, 20, 35, 32, 50, 45, 32, 35, 25, 40, 30, 25]
+      ],
+      "duration": [
+        "2m 18s",
+        [65, 35, 45, 42, 65, 60, 42, 45, 35, 55, 40, 65],
+        [45, 20, 35, 32, 50, 45, 32, 35, 25, 40, 30, 55]
+      ],
+      "labels": ["1-5", "6-10", "11-15", "16-20", "21-25", "26-31"]
+    },
+    "year": {
+      "users": [
+        "72.6K",
+        [65, 35, 45, 42, 65, 60, 42, 45, 35, 55, 40, 65],
+        [45, 20, 35, 32, 50, 45, 32, 35, 25, 40, 30, 55]
+      ],
+      "sessions": [
+        "87.2k",
+        [65, 35, 45, 42, 65, 60, 42, 45, 35, 55, 40, 30],
+        [45, 20, 35, 32, 50, 45, 32, 35, 25, 40, 30, 25]
+      ],
+      "bounce": [
+        "26.3%",
+        [35, 35, 45, 42, 65, 60, 42, 45, 35, 55, 40, 30],
+        [20, 20, 35, 32, 50, 45, 32, 35, 25, 40, 30, 25]
+      ],
+      "duration": [
+        "2m 18s",
+        [65, 35, 45, 42, 65, 60, 42, 45, 35, 55, 40, 65],
+        [45, 20, 35, 32, 50, 45, 32, 35, 25, 40, 30, 55]
+      ],
+      "labels": ["Jan", "Feb", "Mar", "App", "May", "Jun", "Jul", "Aug", "Sep", "Nov", "Oct", "Dec"]
+    }
+  },
+  "trafficChanel": {
+    "week": {
+      "direct": {
+        "sessions": "3,397",
+        "rate": "3.5",
+        "goals": "225",
+        "percent": "70",
+        "value": "23.28"
+      },
+      "email": {
+        "sessions": "5,397",
+        "rate": "3.5",
+        "goals": "225",
+        "percent": "63",
+        "value": "23.28"
+      },
+      "search": {
+        "sessions": "7,397",
+        "rate": "3.5",
+        "goals": "225",
+        "percent": "83",
+        "value": "23.28"
+      },
+      "referral": {
+        "sessions": "1,397",
+        "rate": "3.5",
+        "goals": "225",
+        "percent": "73",
+        "value": "23.28"
+      },
+      "media": {
+        "sessions": "397",
+        "rate": "3.5",
+        "goals": "225",
+        "percent": "73",
+        "value": "23.28"
+      },
+      "other": {
+        "sessions": "6,397",
+        "rate": "3.5",
+        "goals": "225",
+        "percent": "73",
+        "value": "23.28"
+      }
+    },
+    "month": {
+      "direct": {
+        "sessions": "23,397",
+        "rate": "4.5",
+        "goals": "2225",
+        "percent": "70",
+        "value": "23.28"
+      },
+      "email": {
+        "sessions": "25,397",
+        "rate": "4.5",
+        "goals": "1225",
+        "percent": "63",
+        "value": "23.28"
+      },
+      "search": {
+        "sessions": "27,397",
+        "rate": "3.5",
+        "goals": "2025",
+        "percent": "83",
+        "value": "23.28"
+      },
+      "referral": {
+        "sessions": "11,397",
+        "rate": "5",
+        "goals": "2205",
+        "percent": "73",
+        "value": "23.28"
+      },
+      "media": {
+        "sessions": "2397",
+        "rate": "3.5",
+        "goals": "2025",
+        "percent": "73",
+        "value": "23.28"
+      },
+      "other": {
+        "sessions": "2,397",
+        "rate": "3.5",
+        "goals": "225",
+        "percent": "73",
+        "value": "23.28"
+      }
+    },
+    "year": {
+      "direct": {
+        "sessions": "93,397",
+        "rate": "4.2",
+        "goals": "9225",
+        "percent": "80",
+        "value": "23.28"
+      },
+      "email": {
+        "sessions": "25,397",
+        "rate": "4.5",
+        "goals": "12025",
+        "percent": "70",
+        "value": "23.28"
+      },
+      "search": {
+        "sessions": "100,397",
+        "rate": "3.5",
+        "goals": "9025",
+        "percent": "83",
+        "value": "23.28"
+      },
+      "referral": {
+        "sessions": "51,397",
+        "rate": "5",
+        "goals": "5205",
+        "percent": "73",
+        "value": "23.28"
+      },
+      "media": {
+        "sessions": "9397",
+        "rate": "3.5",
+        "goals": "2025",
+        "percent": "73",
+        "value": "23.28"
+      },
+      "other": {
+        "sessions": "5,397",
+        "rate": "3.5",
+        "goals": "225",
+        "percent": "73",
+        "value": "23.28"
+      }
+    }
+  },
+  "device": {
+    "today": [83, 70, 20],
+    "week": [483, 870, 420],
+    "month": [4483, 5870, 2420],
+    "year": [9483, 13870, 15420]
+  },
+  "region": {
+    "week": [
+      ["United State", 3947],
+      ["United Kingdom", 5578],
+      ["Canada", 398],
+      ["Japan", 391],
+      ["India", 242],
+      ["Bangladesh", 74],
+      ["Brazil", 10]
+    ],
+    "month": [
+      ["United State", 23947],
+      ["United Kingdom", 15578],
+      ["Canada", 8398],
+      ["Japan", 3391],
+      ["India", 1242],
+      ["Bangladesh", 374],
+      ["Brazil", 210]
+    ],
+    "year": [
+      ["United State", 93947],
+      ["United Kingdom", 85578],
+      ["Canada", 10398],
+      ["Japan", 9391],
+      ["India", 7242],
+      ["Bangladesh", 974],
+      ["Brazil", 710]
+    ]
+  },
+  "generated": {
+    "week": [
+      {
+        "key": "1",
+        "name": "Google",
+        "visitors": "3,397",
+        "page_View": "2,201",
+        "revenue": "$536",
+        "trend": {
+          "data": [0, 10, 8, 14, 7, 10],
+          "borderColor": "#5F63F2"
+        }
+      },
+      {
+        "key": "2",
+        "name": "Facebook",
+        "visitors": "4,456",
+        "page_View": "2,101",
+        "revenue": "$745",
+        "trend": {
+          "data": [10, 7, 14, 8, 5, 11],
+          "borderColor": "#FF69A5"
+        }
+      },
+      {
+        "key": "3",
+        "name": "Email marketing",
+        "visitors": "5,148",
+        "page_View": "9,105",
+        "revenue": "$256",
+        "trend": {
+          "data": [7, 11, 5, 3, 7, 9],
+          "borderColor": "#20C997"
+        }
+      },
+      {
+        "key": "4",
+        "name": "Direct website",
+        "visitors": "6,954",
+        "page_View": "7,358",
+        "revenue": "$852",
+        "trend": {
+          "data": [10, 5, 9, 6, 11, 7],
+          "borderColor": "#2C99FF"
+        }
+      },
+      {
+        "key": "5",
+        "name": "Referral",
+        "visitors": "9,963",
+        "page_View": "5,741",
+        "revenue": "$159",
+        "trend": {
+          "data": [5, 15, 6, 21, 9, 16],
+          "borderColor": "#FA8B0C"
+        }
+      }
+    ],
+    "month": [
+      {
+        "key": "1",
+        "name": "Google",
+        "visitors": "23,397",
+        "page_View": "12,201",
+        "revenue": "$5,536",
+        "trend": {
+          "data": [0, 10, 8, 14, 7, 10],
+          "borderColor": "#5F63F2"
+        }
+      },
+      {
+        "key": "2",
+        "name": "Facebook",
+        "visitors": "14,456",
+        "page_View": "12,101",
+        "revenue": "$4,745",
+        "trend": {
+          "data": [10, 7, 14, 8, 5, 11],
+          "borderColor": "#FF69A5"
+        }
+      },
+      {
+        "key": "3",
+        "name": "Email marketing",
+        "visitors": "45,148",
+        "page_View": "19,105",
+        "revenue": "$8,256",
+        "trend": {
+          "data": [7, 11, 5, 3, 7, 9],
+          "borderColor": "#20C997"
+        }
+      },
+      {
+        "key": "4",
+        "name": "Direct website",
+        "visitors": "26,954",
+        "page_View": "17,358",
+        "revenue": "$9,852",
+        "trend": {
+          "data": [10, 5, 9, 6, 11, 7],
+          "borderColor": "#2C99FF"
+        }
+      },
+      {
+        "key": "5",
+        "name": "Referral",
+        "visitors": "89,963",
+        "page_View": "75,741",
+        "revenue": "$11,159",
+        "trend": {
+          "data": [5, 15, 6, 21, 9, 16],
+          "borderColor": "#FA8B0C"
+        }
+      }
+    ],
+    "year": [
+      {
+        "key": "1",
+        "name": "Google",
+        "visitors": "93,397",
+        "page_View": "82,201",
+        "revenue": "$9,536",
+        "trend": {
+          "data": [0, 10, 8, 14, 7, 10],
+          "borderColor": "#5F63F2"
+        }
+      },
+      {
+        "key": "2",
+        "name": "Facebook",
+        "visitors": "74,456",
+        "page_View": "62,101",
+        "revenue": "$9,745",
+        "trend": {
+          "data": [10, 7, 14, 8, 5, 11],
+          "borderColor": "#FF69A5"
+        }
+      },
+      {
+        "key": "3",
+        "name": "Email marketing",
+        "visitors": "95,148",
+        "page_View": "59,105",
+        "revenue": "$10,256",
+        "trend": {
+          "data": [7, 11, 5, 3, 7, 9],
+          "borderColor": "#20C997"
+        }
+      },
+      {
+        "key": "4",
+        "name": "Direct website",
+        "visitors": "86,954",
+        "page_View": "37,358",
+        "revenue": "$10,852",
+        "trend": {
+          "data": [10, 5, 9, 6, 11, 7],
+          "borderColor": "#2C99FF"
+        }
+      },
+      {
+        "key": "5",
+        "name": "Referral",
+        "visitors": "100,963",
+        "page_View": "100,741",
+        "revenue": "$91,159",
+        "trend": {
+          "data": [5, 15, 6, 21, 9, 16],
+          "borderColor": "#FA8B0C"
+        }
+      }
+    ]
+  },
+  "topSale": {
+    "today": [
+      {
+        "key": "1",
+        "img": "1.png",
+        "name": "Samsung Galaxy S8 256GB",
+        "price": "$280",
+        "sold": "26",
+        "revenue": "$536"
+      },
+      {
+        "key": "2",
+        "img": "2.png",
+        "name": "Half Sleeve Shirt",
+        "price": "$39",
+        "sold": "80",
+        "revenue": "$573"
+      },
+      {
+        "key": "3",
+        "img": "3.png",
+        "name": "Marco Shoes",
+        "price": "$89",
+        "sold": "81",
+        "revenue": "$758"
+      },
+      {
+        "key": "4",
+        "img": "4.png",
+        "name": "Marco Shoes",
+        "price": "$32",
+        "sold": "51",
+        "revenue": "$8,105"
+      },
+      {
+        "key": "5",
+        "img": "5.png",
+        "name": "15\" MackBook Pro",
+        "price": "$950",
+        "sold": "45",
+        "revenue": "$5,154"
+      }
+    ],
+    "week": [
+      {
+        "key": "1",
+        "img": "1.png",
+        "name": "Samsung Galaxy S8 256GB",
+        "price": "$280",
+        "sold": "126",
+        "revenue": "$38,536"
+      },
+      {
+        "key": "2",
+        "img": "2.png",
+        "name": "Half Sleeve Shirt",
+        "price": "$39",
+        "sold": "180",
+        "revenue": "$20,573"
+      },
+      {
+        "key": "3",
+        "img": "3.png",
+        "name": "Marco Shoes",
+        "price": "$89",
+        "sold": "581",
+        "revenue": "$170,758"
+      },
+      {
+        "key": "4",
+        "img": "5.png",
+        "name": "Marco Shoes",
+        "price": "$32",
+        "sold": "451",
+        "revenue": "$258,105"
+      },
+      {
+        "key": "5",
+        "img": "4.png",
+        "name": "15\" MackBook Pro",
+        "price": "$950",
+        "sold": "745",
+        "revenue": "$745,154"
+      }
+    ],
+    "month": [
+      {
+        "key": "1",
+        "img": "1.png",
+        "name": "Samsung Galaxy S8 256GB",
+        "price": "$280",
+        "sold": "526",
+        "revenue": "$78,536"
+      },
+      {
+        "key": "2",
+        "img": "2.png",
+        "name": "Half Sleeve Shirt",
+        "price": "$39",
+        "sold": "680",
+        "revenue": "$50,573"
+      },
+      {
+        "key": "3",
+        "img": "3.png",
+        "name": "Marco Shoes",
+        "price": "$89",
+        "sold": "981",
+        "revenue": "$570,758"
+      },
+      {
+        "key": "4",
+        "img": "5.png",
+        "name": "Marco Shoes",
+        "price": "$32",
+        "sold": "951",
+        "revenue": "$658,105"
+      },
+      {
+        "key": "5",
+        "img": "4.png",
+        "name": "15\" MackBook Pro",
+        "price": "$950",
+        "sold": "1045",
+        "revenue": "$945,154"
+      }
+    ],
+    "year": [
+      {
+        "key": "1",
+        "img": "1.png",
+        "name": "Samsung Galaxy S8 256GB",
+        "price": "$280",
+        "sold": "2026",
+        "revenue": "$308,536"
+      },
+      {
+        "key": "2",
+        "img": "2.png",
+        "name": "Half Sleeve Shirt",
+        "price": "$39",
+        "sold": "1180",
+        "revenue": "$200,573"
+      },
+      {
+        "key": "3",
+        "img": "3.png",
+        "name": "Marco Shoes",
+        "price": "$89",
+        "sold": "2581",
+        "revenue": "$1070,758"
+      },
+      {
+        "key": "4",
+        "img": "5.png",
+        "name": "Marco Shoes",
+        "price": "$32",
+        "sold": "3451",
+        "revenue": "$2508,105"
+      },
+      {
+        "key": "5",
+        "img": "4.png",
+        "name": "15\" MackBook Pro",
+        "price": "$950",
+        "sold": "3745",
+        "revenue": "$7045,154"
+      }
+    ]
+  },
+  "recentDeal": {
+    "today": [
+      {
+        "key": "1",
+        "name": "John Mark",
+        "date": "20 June 2020",
+        "price": "$536.00",
+        "img": "static/img/users/1.png"
+      },
+      {
+        "key": "2",
+        "name": "David Miller",
+        "date": "20 June 2020",
+        "price": "$336.00",
+        "img": "static/img/users/2.png"
+      },
+      {
+        "key": "3",
+        "name": "Chris Lein",
+        "date": "20 June 2020",
+        "price": "$356.00",
+        "img": "static/img/users/3.png"
+      },
+      {
+        "key": "4",
+        "name": "Ahmad Musa",
+        "date": "20 June 2020",
+        "price": "$383.00",
+        "img": "static/img/users/4.png"
+      },
+      {
+        "key": "5",
+        "name": "Robert Philips",
+        "date": "20 June 2020",
+        "price": "$536.00",
+        "img": "static/img/users/5.png"
+      }
+    ],
+    "week": [
+      {
+        "key": "1",
+        "name": "John Mark",
+        "date": "20 June 2020",
+        "price": "$1536.00",
+        "img": "static/img/users/1.png"
+      },
+      {
+        "key": "2",
+        "name": "David Miller",
+        "date": "20 June 2020",
+        "price": "$1336.00",
+        "img": "static/img/users/2.png"
+      },
+      {
+        "key": "3",
+        "name": "Chris Lein",
+        "date": "20 June 2020",
+        "price": "$1356.00",
+        "img": "static/img/users/3.png"
+      },
+      {
+        "key": "4",
+        "name": "Ahmad Musa",
+        "date": "20 June 2020",
+        "price": "$1383.00",
+        "img": "static/img/users/4.png"
+      },
+      {
+        "key": "5",
+        "name": "Robert Philips",
+        "date": "20 June 2020",
+        "price": "$1536.00",
+        "img": "static/img/users/5.png"
+      }
+    ],
+    "month": [
+      {
+        "key": "1",
+        "name": "John Mark",
+        "date": "20 June 2020",
+        "price": "$5536.00",
+        "img": "static/img/users/1.png"
+      },
+      {
+        "key": "2",
+        "name": "David Miller",
+        "date": "20 June 2020",
+        "price": "$5336.00",
+        "img": "static/img/users/2.png"
+      },
+      {
+        "key": "3",
+        "name": "Chris Lein",
+        "date": "20 June 2020",
+        "price": "$5356.00",
+        "img": "static/img/users/3.png"
+      },
+      {
+        "key": "4",
+        "name": "Ahmad Musa",
+        "date": "20 June 2020",
+        "price": "$5383.00",
+        "img": "static/img/users/4.png"
+      },
+      {
+        "key": "5",
+        "name": "Robert Philips",
+        "date": "20 June 2020",
+        "price": "$5536.00",
+        "img": "static/img/users/5.png"
+      }
+    ],
+    "year": [
+      {
+        "key": "1",
+        "name": "John Mark",
+        "date": "20 June 2020",
+        "price": "$12536.00",
+        "img": "static/img/users/1.png"
+      },
+      {
+        "key": "2",
+        "name": "David Miller",
+        "date": "20 June 2020",
+        "price": "$11336.00",
+        "img": "static/img/users/2.png"
+      },
+      {
+        "key": "3",
+        "name": "Chris Lein",
+        "date": "20 June 2020",
+        "price": "$10356.00",
+        "img": "static/img/users/3.png"
+      },
+      {
+        "key": "4",
+        "name": "Ahmad Musa",
+        "date": "20 June 2020",
+        "price": "$9383.00",
+        "img": "static/img/users/4.png"
+      },
+      {
+        "key": "5",
+        "name": "Robert Philips",
+        "date": "20 June 2020",
+        "price": "$13536.00",
+        "img": "static/img/users/5.png"
+      }
+    ]
+  },
+  "location": {
+    "today": [
+      {
+        "key": "1",
+        "location": "United States",
+        "order": "97",
+        "revenue": "$536"
+      },
+      {
+        "key": "2",
+        "location": "United Kingdom",
+        "order": "20",
+        "revenue": "$748"
+      },
+      {
+        "key": "3",
+        "location": "Canada",
+        "order": "10",
+        "revenue": "$415"
+      },
+      {
+        "key": "4",
+        "location": "China",
+        "order": "18",
+        "revenue": "$963"
+      }
+    ],
+    "week": [
+      {
+        "key": "1",
+        "location": "United States",
+        "order": "397",
+        "revenue": "$38,536"
+      },
+      {
+        "key": "2",
+        "location": "United Kingdom",
+        "order": "420",
+        "revenue": "$45,748"
+      },
+      {
+        "key": "3",
+        "location": "Canada",
+        "order": "210",
+        "revenue": "$96,415"
+      },
+      {
+        "key": "4",
+        "location": "China",
+        "order": "108",
+        "revenue": "$25,963"
+      }
+    ],
+    "month": [
+      {
+        "key": "1",
+        "location": "United States",
+        "order": "797",
+        "revenue": "$78,536"
+      },
+      {
+        "key": "2",
+        "location": "United Kingdom",
+        "order": "920",
+        "revenue": "$95,748"
+      },
+      {
+        "key": "3",
+        "location": "Canada",
+        "order": "710",
+        "revenue": "$100,415"
+      },
+      {
+        "key": "4",
+        "location": "China",
+        "order": "608",
+        "revenue": "$95,963"
+      }
+    ],
+    "year": [
+      {
+        "key": "1",
+        "location": "United States",
+        "order": "1397",
+        "revenue": "$308,536"
+      },
+      {
+        "key": "2",
+        "location": "United Kingdom",
+        "order": "1420",
+        "revenue": "$405,748"
+      },
+      {
+        "key": "3",
+        "location": "Canada",
+        "order": "1210",
+        "revenue": "$100,415"
+      },
+      {
+        "key": "4",
+        "location": "China",
+        "order": "1508",
+        "revenue": "$250,963"
+      }
+    ]
+  }
+}
