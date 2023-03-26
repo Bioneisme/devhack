@@ -8,4 +8,6 @@ router.post("/createService", maintenanceController.createMaintenance); // for a
 router.get("/getServices", maintenanceController.getMaintenances);
 router.get("/getFilteredServices", maintenanceController.getFilteredMaintenance);
 
+router.delete("/deleteService/:id", maintenanceController.deleteMaintenance); // for admin
+
 export default router;

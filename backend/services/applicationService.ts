@@ -54,6 +54,16 @@ class ApplicationService {
 
         return application;
     }
+
+    async deleteApplication(id: number) {
+        const application = await Application.findByPk(id);
+        if (!application) {
+            return ApiError.BadRequest('Application not found', 'application_not_found');
+        }
+
+        await application.destroy();
+        return application;
+    }
 }
 
 export default new ApplicationService();

@@ -1,4 +1,5 @@
 import {Maintenance} from "../entities";
+import ApiError from "../exceptions/ApiError";
 
 class MaintenanceService {
     async createMaintenance(name: string, category: string, description: string, price: number, time_to_complete: string) {
@@ -29,6 +30,16 @@ class MaintenanceService {
         }
 
         return objects;
+    }
+
+    async deleteMaintenance(id: number) {
+        const maintenance = await Maintenance.findByPk(id);
+        if (!maintenance) {
+            return ApiError.BadRequest('Maintenance not found', 'maintenance_not_found');
+        }
+        await maintenance.destroy();
+
+        return maintenance;
     }
 }
 

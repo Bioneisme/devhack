@@ -95,6 +95,17 @@ class ApplicationController {
             next(e);
         }
     }
+
+    async deleteApplication(req: Request, res: Response, next: NextFunction) {
+        try {
+            const {id} = req.params;
+            await applicationService.deleteApplication(+id);
+
+            return res.json({ok: true, message: 'Application successfully deleted'});
+        } catch (e) {
+            next(e);
+        }
+    }
 }
 
 export default new ApplicationController();

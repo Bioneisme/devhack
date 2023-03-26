@@ -34,6 +34,17 @@ class MaintenanceController {
             next(e);
         }
     }
+
+    async deleteMaintenance(req: Request, res: Response, next: NextFunction) {
+        try {
+            const {id} = req.params;
+            await maintenanceService.deleteMaintenance(+id);
+
+            return res.json({ok: true, message: 'Maintenance successfully deleted'});
+        } catch (e) {
+            next(e);
+        }
+    }
 }
 
 export default new MaintenanceController();
