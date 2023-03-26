@@ -31,7 +31,7 @@ const ReferralsPage = () => {
           <div style={ { minHeight: 'calc(100vh - 300px)' } }>
             <Row gutter={ [36, 36] }>
               <ApplicationModule />
-              <AnnualPayoutsModule />
+              {/*<AnnualPayoutsModule />*/}
             </Row>
           </div>
         </Cards>

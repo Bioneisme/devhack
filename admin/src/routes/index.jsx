@@ -8,7 +8,7 @@ export const privateRoutes = [
     {path: '/dev', component: <MainPage />, id: 1},
     {path: '/dev/bot', component: <BotPage />, id: 2},
     {path: '/dev/users', component: <UsersPage />, id: 3},
-    {path: '/dev/referrals', component: <ReferralsPage />, id: 4},
+    {path: '/dev/applications', component: <ReferralsPage />, id: 4},
 
 ];
 
