@@ -62,3 +62,13 @@ docker-compose build
 ```sh
 docker-compose up
 ```
+
+* To get an SSL certificate from Let's Encrypt, use certbot (if not necessary, you can remove it)
+```sh
+docker compose run --rm  certbot certonly --webroot --webroot-path /var/www/certbot/ -d example.org
+```
+
+* To renew the certificate
+```sh
+docker compose run --rm  certbot renew
+```
