@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
 
-import { Col, Collapse, Divider, Row, Space, Spin, Typography } from "antd";
+import { Col, Collapse, Row, Space, Spin, Typography } from "antd";
 import { CaretRightOutlined } from "@ant-design/icons";
-import moment from "moment";
 
 import API from "../../../api/index.js";
 import CollapseTable from "./CollapseTable.jsx";
 
 const MyApplicationsModule = () => {
   const [applications, setApplications] = useState([]);
-  const { Title } = Typography;
+  const { Title, Text } = Typography;
   const { Panel } = Collapse;
 
   useEffect(() => {
@@ -23,9 +22,21 @@ const MyApplicationsModule = () => {
     getData();
   }, []);
 
-  if (applications.length === 0) {
+  if (!applications) {
     return <Spin />;
   }
+
+
+  if (applications.length === 0) {
+    return <section className="all-applications">
+      <Row gutter={ [0, 24] }>
+        <Col span={ 24 }>
+          <Title>Список заявок пуст</Title>
+        </Col>
+      </Row>
+    </section>;
+  }
+
 
   const historyApplications = applications.filter((application) => application.status === "Выполнено");
   const activeApplications = applications.filter((application) => application.status !== "Выполнено");

@@ -10,10 +10,10 @@ const CreateApplicationModule = () => {
     const { TextArea } = Input;
     const [modalOpen, setModalOpen] = useState(false);
 
-    const [price, setPrice] = useState(0);
     const [category, setCategory] = useState("");
     const title = useInput("");
     const description = useInput("");
+    const price = useInput("");
 
     function onCategoryChange(value) {
       setCategory(value);
@@ -23,11 +23,12 @@ const CreateApplicationModule = () => {
       const response = await API.post("/applications/createApplication", {
         title: title.value,
         description: description.value,
-        price: price,
+        price: price.value,
         category: category,
         status: "На рассмотрении"
       });
       console.log(response.data.applications);
+      setModalOpen(false);
     }
 
     return (
@@ -104,9 +105,9 @@ const CreateApplicationModule = () => {
                   size="middle"
                 >
                   <Title level={ 4 }>Какую цену можете предложить?</Title>
-                  <InputNumber
-                    value={ price }
-                    onChange={ setPrice }
+                  <Input
+                    placeholder="Цена"
+                    { ...price }
                   />
                 </Space>
               </Col>

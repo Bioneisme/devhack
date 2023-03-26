@@ -11,9 +11,9 @@ const UserRegisterForm = () => {
   const { Title, Text } = Typography;
 
   // input fields for registration
-  const phone = useInput("87086308161");
-  const password = useInput("password");
-  const name = useInput("Zaur");
+  const phone = useInput("");
+  const password = useInput("");
+  const name = useInput("");
 
   function handleSubmit() {
     dispatch(userRegister(

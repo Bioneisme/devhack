@@ -13,8 +13,8 @@ const UserLoginForm = () => {
   const { Title, Text } = Typography;
 
   // input fields for login
-  const phone = useInput("87086308161");
-  const password = useInput("password");
+  const phone = useInput("");
+  const password = useInput("");
 
   function handleSubmit() {
     dispatch(userLogin(
