@@ -14,11 +14,9 @@ const App = () => {
   return (
     <div className="app">
       { isAuth && <AppHeader /> }
-      {/*<main className={contentClass}>*/}
-        <Suspense fallback={ <Spin size="large" /> }>
-          <LazyAppRouter />
-        </Suspense>
-      {/*</main>*/}
+      <Suspense fallback={ <Spin size="large" /> }>
+        <LazyAppRouter />
+      </Suspense>
     </div>
   );
 };

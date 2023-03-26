@@ -41,8 +41,9 @@ const AppHeader = () => {
 
   const menuItems = [
     getMenuItem("/", "Главная"),
-    getMenuItem("/services", "Мои заявки"),
-    getMenuItem("/bruh", "Получить услугу"),
+    getMenuItem("/myApplications", "Мои заявки"),
+    getMenuItem("/getServices", "Получить услугу"),
+    getMenuItem("/reports", "Отчеты"),
   ];
 
   return (

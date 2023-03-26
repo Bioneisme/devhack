@@ -25,7 +25,8 @@ h6 {
   @extend %flex-center;
 
   width: 100%;
-  padding: 6rem 0;
+  height: 15vh !important;
+  padding: 6rem !important;
 
   background: $header-color !important;
 
@@ -45,9 +46,15 @@ h6 {
 
 // inputs
 .ant-input {
-  //padding: $fs-xxsmall $fs-regular;
-
   background: transparent;
+
+  &-number {
+    width: 100%;
+  }
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
 }
 
 // menu
@@ -69,6 +76,10 @@ h6 {
 // select
 .ant-select {
   width: 100%;
+
+  &-selection-placeholder {
+    color: $placeholder-color !important;
+  }
 
   &-dropdown {
     background: $secondary-light-color !important;
@@ -138,15 +149,13 @@ h6 {
   justify-content: center !important;
 
   // collapse inside space in all applications
-  .all-applications__accordion {
+  .accordion {
     width: 100vw !important;
   }
 }
 
 // collapse
 .ant-collapse {
-
-
   &, &-item, &-header, &-content {
     border: none !important;
     border-radius: 0 !important;
@@ -168,6 +177,24 @@ h6 {
   }
 }
 
+// modal
+.ant-modal {
+  &-body,
+  &-header,
+  &-title,
+  &-content,
+  &-close-x {
+    background-color: transparent !important;
+  }
+
+  &-header, &-close-x, &-footer {
+    display: none !important;
+  }
+
+  &-content {
+    backdrop-filter: blur(10px);
+  }
+}
 
 // custom class
 .flex-center {

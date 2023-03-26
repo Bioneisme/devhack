@@ -5,9 +5,9 @@ import { CaretRightOutlined } from "@ant-design/icons";
 import moment from "moment";
 
 import API from "../../../api/index.js";
-import CollapseTables from "./CollapseTables.jsx";
+import CollapseTable from "./CollapseTable.jsx";
 
-const ApplicationsModule = () => {
+const MyApplicationsModule = () => {
   const [applications, setApplications] = useState([]);
   const { Title } = Typography;
   const { Panel } = Collapse;
@@ -39,14 +39,14 @@ const ApplicationsModule = () => {
         <Col span={ 24 }>
           <Space
             direction="vertical"
-            className="all-applications__accordion"
+            className="accordion"
           >
             <Collapse
               expandIcon={ ({ isActive }) => <CaretRightOutlined rotate={ isActive ? 90 : 0 } /> }
             >
               <Panel header="Мои заявки" key="1">
                 { activeApplications.map((application, index) =>
-                  <CollapseTables
+                  <CollapseTable
                     application={ application }
                     index={ index }
                     applicationsLength={ activeApplications.length - 1 }
@@ -60,7 +60,7 @@ const ApplicationsModule = () => {
             >
               <Panel header="История" key="2">
                 { historyApplications.map((application, index) =>
-                  <CollapseTables
+                  <CollapseTable
                     application={ application }
                     index={ index }
                     applicationsLength={ historyApplications.length - 1 }
@@ -75,4 +75,4 @@ const ApplicationsModule = () => {
   );
 };
 
-export default ApplicationsModule;
+export default MyApplicationsModule;

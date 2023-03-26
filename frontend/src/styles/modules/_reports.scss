@@ -1,0 +1,50 @@
+/**
+* @desc         reports module styles
+* @requires     variables, placeholders
+*/
+
+.reports {
+  h4 {
+    font-weight: $fw-light !important;
+  }
+
+  ul li {
+    font-size: $fs-regular;
+  }
+}
+
+.progress {
+  &-bar {
+    position: relative;
+    z-index: 0;
+
+    @extend %flex-row;
+    @extend %flex-center;
+
+    height: 6rem;
+    width: 40rem;
+
+    background: rgba($primary-light-color, 0.5);
+
+    border-radius: 10rem;
+
+    font-size: $fs-regular;
+  }
+
+  &-line {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+
+    height: 100%;
+
+    border-bottom-left-radius: 10rem;
+    border-top-left-radius: 10rem;
+
+    background: rgba($primary-dark-color, 0.8);
+  }
+
+  &-value {
+    z-index: 2;
+  }
+}
