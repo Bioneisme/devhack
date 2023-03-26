@@ -23,14 +23,7 @@ const DashboardLayoutSidebar = () => {
     getMenuItem('/dev/', 'Главная', <FeatherIcon icon='home' />),
     getMenuItem('/dev/bot', 'Телеграм бот', <FeatherIcon icon='send' />),
     getMenuItem('/dev/users', 'Пользователи', <FeatherIcon icon='users' />),
-    getMenuItem('/dev/referrals', 'Реферальная система', <FeatherIcon icon='percent' />),
-    getMenuItem(null, 'Администраторы', <FeatherIcon icon='gitlab' />,
-      [
-        getMenuItem('/users/bioneisme', 'bioneisme', null),
-        getMenuItem('/users/lagmazavr', 'lagmazavr', null),
-        getMenuItem('/addAdmin', 'Добавить нового админа', null),
-      ]
-    ),
+    getMenuItem('/dev/referrals', 'Работа с заявками', <FeatherIcon icon='user' />)
   ];
 
   const SideBarStyle = {

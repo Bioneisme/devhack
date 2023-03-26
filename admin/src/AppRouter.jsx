@@ -5,7 +5,7 @@ import { privateRoutes, publicRoutes } from './routes';
 
 const AppRouter = () => {
   // const {isAuth} = useAppSelector(authSelectors);
-  const isAuth = true;
+  const isAuth = false;
   return (
     <Routes>
       {!isAuth

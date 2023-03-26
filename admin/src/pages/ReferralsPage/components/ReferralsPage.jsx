@@ -10,7 +10,7 @@ import { Main } from "../../pagesStyle.js";
 import { PageHeader } from "../../../components/pageHeaders/pageHeaders.jsx";
 import { Cards } from "../../../components/cards/frame/cards-frame.jsx";
 import Loader from "../../../Loader.jsx";
-import InstantPayoutsModule from "./InstantPayoutsModule.jsx";
+import ApplicationModule from "./ApplicationModule.jsx";
 import AnnualPayoutsModule from "./AnnualPayoutsModule.jsx";
 
 const ReferralsPage = () => {
@@ -24,13 +24,13 @@ const ReferralsPage = () => {
     <>
       <PageHeader
         ghost
-        title='Реферальная система'
+        title='Работа с заявками'
       />
       <Main>
         <Cards headless>
           <div style={ { minHeight: 'calc(100vh - 300px)' } }>
             <Row gutter={ [36, 36] }>
-              <InstantPayoutsModule />
+              <ApplicationModule />
               <AnnualPayoutsModule />
             </Row>
           </div>
