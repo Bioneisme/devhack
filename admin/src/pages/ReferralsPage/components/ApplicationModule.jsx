@@ -11,7 +11,7 @@ const Children = ({item, dataList}) => {
     const executor = useInput(item.executor);
     const description = useInput(item.description);
     const price = useInput(item.price);
-    const date = useInput(item.data ? moment(item.date).format('DD.MM.YYYY HH:mm') : null);
+    const date = useInput(item.data ? moment(item.date).format('YYYY-DD-MM HH:mm') : null);
 
     const saveData = () => {
         API.patch('applications/updateApplication/' + item.id, {
