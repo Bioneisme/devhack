@@ -6,7 +6,7 @@ import adminRoute from "./routes/adminRoute";
 import applicationRoute from "./routes/applicationRoute";
 import maintenanceRoute from "./routes/maintenanceRoute";
 import paymentRoute from "./routes/paymentRoute";
-import {CLIENT_URL, CLIENT_URL_ADMIN, CLIENT_URL_DEV, SERVER_PORT} from "./config/settings";
+import {CLIENT_URL, CLIENT_URL_ADMIN, CLIENT_URL_DEV, CLIENT_URL_ADMIN_DEV, SERVER_PORT} from "./config/settings";
 import logger from "./config/logger";
 import {DB} from "./config/database";
 import cookieParser from "cookie-parser";
@@ -18,7 +18,7 @@ app.use(express.json({limit: '50mb'}));
 app.use(express.urlencoded({limit: '50mb'}));
 app.use(cors({
     credentials: true,
-    origin: [CLIENT_URL, CLIENT_URL_DEV, CLIENT_URL_ADMIN]
+    origin: [CLIENT_URL, CLIENT_URL_DEV, CLIENT_URL_ADMIN, CLIENT_URL_ADMIN_DEV]
 }));
 app.use(cookieParser());
 app.use(logging); // Logging all routes

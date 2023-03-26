@@ -35,6 +35,8 @@ services:
       - SERVER_PORT=5000
       - CLIENT_URL_DEV=http://localhost:3000
       - CLIENT_URL=https://devhack.13lab.tech
+      - CLIENT_URL_ADMIN=https://devhack-admin.13lab.tech
+      - CLIENT_URL_ADMIN_DEV=http://localhost:4000
     ports:
       - "5000:5000"
     depends_on:
