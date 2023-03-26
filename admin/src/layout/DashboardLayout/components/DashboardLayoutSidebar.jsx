@@ -21,9 +21,7 @@ const DashboardLayoutSidebar = () => {
 
   const menuItems = [
     getMenuItem('/dev/', 'Главная', <FeatherIcon icon='home' />),
-    getMenuItem('/dev/bot', 'Телеграм бот', <FeatherIcon icon='send' />),
-    getMenuItem('/dev/users', 'Пользователи', <FeatherIcon icon='users' />),
-    getMenuItem('/dev/applications', 'Работа с заявками', <FeatherIcon icon='user' />)
+    getMenuItem('/dev/statistics', 'Статистика', <FeatherIcon icon='pie-chart' />),
   ];
 
   const SideBarStyle = {
