@@ -5,7 +5,7 @@ ENV PATH="/opt/admin/node_modules/.bin:$PATH"
 
 RUN apk update
 
-EXPOSE 3000
+EXPOSE 4000
 
 COPY . .
 
