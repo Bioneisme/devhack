@@ -2,12 +2,6 @@
 
 Made for the Terricon Valley hackathon "Developer Hackathon 2023" in 2 days.
 
-Demo: 
-
-https://devhack.13lab.tech/
-
-https://devhack-admin.13lab.tech/
-
 ### Incident manager for AXIS
 
 Our project is a web and ios app that allows users to manage problems in your Residential complex by creating
