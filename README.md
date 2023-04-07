@@ -46,7 +46,7 @@ applications to fix the problem and having access to your home's financial repor
 1. Clone the repo
 
 ```sh
-git clone https://github.com/Bioneisme/devhack-hackthon.git
+git clone https://github.com/Bioneisme/devhack-hackathon.git
 ```
 
 2. Configure environment variables
